@@ -1,1 +1,0 @@
-# baholash-platformasi
