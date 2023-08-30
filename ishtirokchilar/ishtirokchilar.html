@@ -13,26 +13,26 @@
 <body>
    <!-- option bar -->
    <div
-      class="option-bar z-20 justify-between rounded-l-lg py-3 option-bar fixed w-[56px] h-[206px] bg-white right-0 top-[50%] translate-y-[-50%] md:flex flex-col  items-center">
-      <button class="w-8 h-8 bg-gray-200 rounded-lg md:flex justify-center items-center hover:bg-black">
+      class="option-bar hidden z-20 justify-between rounded-l-lg py-3 option-bar fixed w-[56px] h-[206px] bg-white right-0 top-[50%] translate-y-[-50%] md:flex flex-col  items-center">
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
          <img src="../logo and icons/mini optinal panel/dark_mode_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
       </button>
-      <button class="w-8 h-8 bg-gray-200 rounded-lg md:flex justify-center items-center hover:bg-black">
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
          <img src="../logo and icons/mini optinal panel/volume_up_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
       </button>
-      <button class="w-8 h-8 bg-gray-200 rounded-lg md:flex justify-center items-center hover:bg-black">
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
          <img src="../logo and icons/mini optinal panel/text_fields_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
       </button>
-      <button class="w-8 h-8 bg-gray-200 rounded-lg md:flex justify-center items-center hover:bg-black">
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
          <img src="../logo and icons/mini optinal panel/invert_colors_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
       </button>
    </div>
 
    <!-- header -->
-   <div class="header flex justify-center bg-[#211F4A] sticky top-0 z-50">
+   <div class="px-4 header flex justify-center bg-[#211F4A] sticky top-0 z-50">
       <header class="flex justify-between items-center text-[14px] text-[white] h-[76px] container ">
-         <img src="../logo and icons/header and footer/logo.svg" alt="">
-         <nav class="navbar">
+         <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]" src="../logo and icons/header and footer/logo.svg" alt="">
+         <nav class="navbar hidden xl:block">
             <ul class="navbar-menu md:flex gap-5 ">
                <li>
                   <a href="#" class="border-b-2 pb-1">Asosiy</a>
@@ -69,7 +69,8 @@
                   <option class="text-black">ru</option>
                </select>
             </div>
-            <button class="rounded-lg bg-[#2861F5] hover:bg-white hover:text-blue-800 py-2 px-4 color">Tizimga
+            <button
+               class="text-xs md:text-sm rounded-lg bg-[#2861F5] hover:bg-white hover:text-blue-800 py-2 px-4 color hover:shadow-lg hover:shadow-blue-300">Tizimga
                kirish</button>
          </div>
       </header>
@@ -79,11 +80,11 @@
 
 
    <!-- ishtirokchilar -->
-   <section class="ishtirokchilar w-full md:flex justify-center bg-[#F1F3F9]">
-      <div class="container py-16 flex flex-col justify-between gap-7">
+   <section class="ishtirokchilar px-3 w-full flex justify-center bg-[#F1F3F9]">
+      <div class="container py-6 sm:py-8 lg:py-16 flex flex-col justify-between gap-7">
          <div class="grid place-items-center gap-5">
-            <h1 class="text-[32px] font-bold uppercase">Ishtirokchilar</h1>
-            <p class="w-[50%] text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <h1 class="text-xl md:text-3xl font-bold uppercase">Ishtirokchilar</h1>
+            <p class="text-xs lg:text-lg w-[80%] lg:w-[50%] text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             <div class="input flex px-3 py-1 bg-white w-[50%] rounded-xl gap-2">
                <img src="../logo and icons/ishtirokchilar/Search.svg" alt="">
@@ -91,7 +92,7 @@
             </div>
          </div>
 
-         <div class="gap-5 grid grid-cols-4 grid-rows-6">
+         <div class="gap-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-6">
 
             <div class="slider-card w-full h-[242] ">
                <div class="w-full h-[171px] bg-white flex items-center justify-center rounded-lg">
@@ -332,10 +333,10 @@
 
 
    <!-- footer -->
-   <div class="footer flex items-center bg-[#211F4A] flex-col">
+   <div class="footer px-4 flex items-center bg-[#211F4A] flex-col ">
       <footer class="flex justify-between items-center text-[14px] text-[white] h-[76px] container mt-3">
-         <img src="../logo and icons/header and footer/logo.svg" alt="">
-         <nav class="navbar">
+         <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]" src="../logo and icons/header and footer/logo.svg" alt="">
+         <nav class="navbar hidden xl:block">
             <ul class="navbar-menu md:flex gap-5 ">
                <li>
                   <a href="#" class="border-b-2 pb-1">Asosiy</a>
@@ -371,8 +372,8 @@
             <img src="../logo and icons/header and footer/Instagram.svg" alt="">
          </div>
       </footer>
-      <div class="footer-bottom flex text-gray-500 justify-center  mb-5 gap-5">
-         <p><a href="#">www.loremipsum.uz</a></p>
+      <div class="footer-bottom grid grid-cols-1 sm:grid-cols-2 text-gray-500 justify-center  mb-5 sm:gap-5">
+         <p class="text-center"><a href="#">www.loremipsum.uz</a></p>
          <p>Barcha huquqlar himoyalangan</p>
       </div>
    </div>
