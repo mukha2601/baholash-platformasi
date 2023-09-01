@@ -74,11 +74,55 @@
             </div>
             <button
                class="text-xs md:text-sm rounded-lg bg-[#2861F5] hover:bg-white hover:text-blue-800 py-2 px-4 color hover:shadow-lg hover:shadow-blue-300">Tizimga
-               kirish</button>
+               kirish
+            </button>
+            <button class="btnBurger block xl:hidden border-[#2861F5] border-2 rounded-lg px-2">
+               <img class="w-[25px]" src="../logo and icons/ishtirokchilar/bar.svg" alt="">
+            </button>
          </div>
       </header>
    </div>
    <!-- header end -->
+
+   <!-- hidden navbar -->
+   <nav class="hiddenNav hidden px-3 flex justify-center py-2 fixed bg-[#2861F5] w-full z-30">
+      <ul class="navbar-menu container grid max-sm:grid-cols-1 grid-cols-2 text-xs md:flex justify-between gap-5 md:text-sm  text-white mb-5 sm:mb-0">
+         <div class="language hidden py-2 max-sm:flex place-content-center gap-1">
+            <img src="../logo and icons/asosiy/language.svg" alt="">
+            <select class="uppercase bg-transparent text-center border-none">
+               <option class="text-black">uz</option>
+               <option class="text-black">ru</option>
+            </select>
+         </div>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Asosiy</a>
+         </li >
+         <li class="py-2 grid place-content-center">
+            <a href="#">Yangiliklar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Baholash metodikalari</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Reyting</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">
+               Ishtirokchilar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Normativ-huquqiy hujjatlar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Aloqa</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">FAQ</a>
+         </li>
+         
+      </ul>
+   </nav>
+   <!-- hidden navbar end -->
 
    <!-- hero -->
    <section class="hero px-4 flex justify-center w-full bg-[#211F4A]">
@@ -1065,6 +1109,7 @@
    <!-- footer end -->
 
    <script src="./asosiy.js"></script>
+   <script src="../index.js"></script>
    <script src="https://code.jquery.com/jquery-3.7.0.js"></script> <!-- jquery cdn  -->
    <script src="./jqvmap/jquery.vmap.min.js"></script> <!-- map  -->
    <script src="./jqvmap/jquery.vmap.uzbekistan.js"></script> <!-- map  -->
