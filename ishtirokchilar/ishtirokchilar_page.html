@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../index.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <!-- option bar -->
+   <div
+      class="option-bar hidden z-20 justify-between rounded-l-lg py-3 option-bar fixed w-[56px] h-[206px] bg-white right-0 top-[50%] translate-y-[-50%] md:flex flex-col  items-center">
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/dark_mode_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/volume_up_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/text_fields_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/invert_colors_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+   </div>
+
+   <!-- header -->
+   <div class="px-4 header flex justify-center bg-[#211F4A] sticky top-0 z-50">
+      <header class="flex justify-between items-center text-[14px] text-[white] h-[76px] container ">
+         <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]"
+            src="../logo and icons/header and footer/logo.svg" alt="">
+         <nav class="navbar hidden xl:block">
+            <ul class="navbar-menu md:flex gap-5 ">
+               <li>
+                  <a href="../asosiy/index.html" class="border-b-2 pb-1">Asosiy</a>
+               </li>
+               <li>
+                  <a href="#">Yangiliklar</a>
+               </li>
+               <li>
+                  <a href="#">Baholash metodikalari</a>
+               </li>
+               <li>
+                  <a href="#">Reyting</a>
+               </li>
+               <li>
+                  <a href="#">
+                     Ishtirokchilar</a>
+               </li>
+               <li>
+                  <a href="#">Normativ-huquqiy hujjatlar</a>
+               </li>
+               <li>
+                  <a href="#">Aloqa</a>
+               </li>
+               <li>
+                  <a href="#">FAQ</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="flex gap-4">
+            <div class="language  max-sm:hidden flex gap-1">
+               <img src="../logo and icons/asosiy/language.svg" alt="">
+               <select class="uppercase bg-transparent text-center border-none outline-none">
+                  <option class="text-black ">uz</option>
+                  <option class="text-black">ru</option>
+               </select>
+            </div>
+            <button
+               class="text-xs md:text-sm rounded-lg bg-[#2861F5] hover:bg-white hover:text-blue-800 py-2 px-4 color hover:shadow-lg hover:shadow-blue-300">Tizimga
+               kirish
+            </button>
+            <button class="btnBurger block xl:hidden border-[#2861F5] border-2 rounded-lg px-2">
+               <img class="w-[25px]" src="../logo and icons/ishtirokchilar/bar.svg" alt="">
+            </button>
+         </div>
+      </header>
+   </div>
+   <!-- header end -->
+
+   <!-- hidden navbar -->
+   <nav class="hiddenNav hidden px-3 flex justify-center py-2 fixed bg-[#2861F5] w-full z-30">
+      <ul
+         class="navbar-menu container grid max-sm:grid-cols-1 grid-cols-2 text-xs md:flex justify-between gap-5 md:text-sm  text-white mb-5 sm:mb-0">
+         <div class="language hidden py-2 max-sm:flex place-content-center gap-1">
+            <img src="../logo and icons/asosiy/language.svg" alt="">
+            <select class="uppercase bg-transparent text-center border-none">
+               <option class="text-black">uz</option>
+               <option class="text-black">ru</option>
+            </select>
+         </div>
+         <li class="py-2 grid place-content-center">
+            <a href="../asosiy/index.html">Asosiy</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Yangiliklar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Baholash metodikalari</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Reyting</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">
+               Ishtirokchilar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Normativ-huquqiy hujjatlar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Aloqa</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">FAQ</a>
+         </li>
+
+      </ul>
+   </nav>
+   <!-- hidden navbar end -->
+
+
+   <section class="px-3 w-full flex justify-center bg-[#F1F3F9]">
+      <div class="container py-6 sm:py-8 lg:py-16 flex flex-col items-center justify-between gap-7">
+         <div class="rounded-full grid place-content-center bg-white w-[150px] h-[150px] md:w-[260px] md:h-[260px]">
+            <img class="w-[50px] md:w-[100px]" src="../logo and icons/ishtirokchilar/akfa logo.svg" alt="">
+         </div>
+         <h1 class="text-xl md:text-3xl font-bold uppercase">Farg’ona davlat universiteti</h1>
+         <div class="flex max-sm:flex-col w-full gap-5 justify-center">
+            <div class="flex bg-white p-2 rounded-xl gap-2">
+               <img src="../logo and icons/ishtirokchilar/language.svg" alt="">
+               <a href="">www.fdu.uz</a>
+               <img src="../logo and icons/ishtirokchilar/call_made.svg" alt="">
+            </div>
+            <div class="flex bg-white p-2 rounded-xl gap-2">
+               <img src="../logo and icons/ishtirokchilar/call.svg" alt="">
+               <p>+998 97 628 28 82</p>
+            </div>
+            <div class="flex bg-white p-2 rounded-xl gap-2">
+               <img src="../logo and icons/ishtirokchilar/location.svg" alt="">
+               <p>Farg’ona shaxar, mustaqillik 3</p>
+            </div>
+         </div>
+         <div class="max-sm:w-full w-[80%] flex flex-col gap-8">
+            <p class="max-sm:text-sm text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+               has been the
+               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+               scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+               into
+               electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+               of
+               Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+               Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p class="max-sm:text-sm text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+               has been the
+               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+               scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+               into
+               electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+               of
+               Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+               Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p class="max-sm:text-sm text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+               has been the
+               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+               scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+               into
+               electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+               of
+               Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+               Aldus PageMaker including versions of Lorem Ipsum.</p>
+         </div>
+      </div>
+   </section>
+
+   <section class="yillik_statistika px-3 w-full flex justify-center bg-[#F1F3F9]">
+      <div class="container py-6 sm:py-8 lg:py-16 flex flex-col items-center justify-between gap-6">
+         <h1 class="text-xl md:text-3xl font-bold uppercase">Yillik statistika</h1>
+         <div class="grid grid-cols-2 sm:grid-cols-4 w-full gap-6">
+            <div class="flex flex-col items-center justify-center rounded-2xl h-[120px] md:h-[170px] bg-white w-full gap-1 md:gap-2">
+               <p class="text-sm md:text-base text-gray-500">2020- yil, 1-o’rin</p>
+               <h1 class="text-lg md:text-[28px] font-bold">3254</h1>
+            </div>
+            <div class="flex flex-col items-center justify-center rounded-2xl h-[120px] md:h-[170px] bg-white w-full gap-1 md:gap-2">
+               <p class="text-sm md:text-base text-gray-500">2020- yil, 1-o’rin</p>
+               <h1 class="text-lg md:text-[28px] font-bold">3254</h1>
+            </div>
+            <div class="flex flex-col items-center justify-center rounded-2xl h-[120px] md:h-[170px] bg-white w-full gap-1 md:gap-2">
+               <p class="text-sm md:text-base text-gray-500">2020- yil, 1-o’rin</p>
+               <h1 class="text-lg md:text-[28px] font-bold">3254</h1>
+            </div>
+            <div class="flex flex-col items-center justify-center rounded-2xl h-[120px] md:h-[170px] bg-white w-full gap-1 md:gap-2">
+               <p class="text-sm md:text-base text-gray-500">2020- yil, 1-o’rin</p>
+               <h1 class="text-lg md:text-[28px] font-bold">3254</h1>
+            </div>
+            
+         </div>
+
+         <div class="grid grid-cols-1 xl:grid-cols-3 w-full gap-6">
+            <div class="flex flex-col items-center justify-center rounded-2xl h-[387px] bg-white w-full p-6 gap-5">
+               <div class="w-[220px] h-[220px] rounded-full overflow-hidden relative">
+                  <div
+                     class="red  bg-white h-[150px] w-[150px] flex flex-col justify-center items-center absolute rounded-full z-10 left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]">
+                     <h1 class="text-[28px] font-bold">50683</h1>
+                     <p class="text-gray-500">Jami</p>
+                  </div>
+                  <div class="blue w-[50%] h-full bg-blue-500 absolute"></div>
+                  <div class="reen right-0 bg-green-400 h-[50%]"></div>
+                  <div class="red bottom-0 bg-red-400 h-[50%]"></div>
+               </div>
+
+               <div class="flex flex-col gap-5 w-full items-center" >
+                  <div class="flex gap-5">
+                     <button class="flex gap-2 items-center">
+                        <div class="w-[20px] h-[20px] rounded-full bg-blue-500"></div>
+                        <p>lorem ipsum</p>
+                     </button>
+                     <button class="flex gap-2 items-center">
+                        <div class="w-[20px] h-[20px] rounded-full bg-green-500"></div>
+                        <p>lorem ipsum</p>
+                     </button>
+                  </div>
+                  <button class="flex gap-2 items-center">
+                     <div class="w-[20px] h-[20px] rounded-full bg-red-500"></div>
+                     <p>lorem ipsum</p>
+                  </button>
+               </div>
+            </div>
+
+            <div class="flex md:col-span-2 flex-col rounded-2xl h-[387px] bg-white w-full p-6 ">
+               <h1 class="uppercase h-1/6  text-xl font-bold">statistika</h1>
+
+               <div class="flex h-5/6 gap-1">
+                  <div class="h-full min-w-[80px] flex flex-col justify-around text-gray-500 mx-4">
+                     <p>1 000 000</p>
+                     <p>1 000 000</p>
+                     <p>875 000</p>
+                     <p>500 000</p>
+                     <p>300 000</p>
+                     <p>100 000</p>
+                  </div>
+                  <div class="flex w-full overflow-x-auto">
+                     <div class=" flex min-w-[600px] gap-5">
+                        <div class="flex">
+                           <div class="max-w-[150px] flex flex-col items-center justify-end gap-3">
+                              <div class="w-[29px] h-[206px] bg-[#405DA9] rounded-full"></div>
+                              <p class="text-center text-sm h-[50px]">Lorem ipsum</p>
+                           </div>
+                        </div>
+                        <div class="flex">
+                           <div class="max-w-[150px] flex flex-col items-center justify-end gap-3">
+                              <div class="w-[29px] h-[140px] bg-[#405DA9] rounded-full"></div>
+                              <p class="text-center text-sm h-[50px]">Lorem ipsum</p>
+                           </div>
+                        </div>
+                        <div class="flex">
+                           <div class="max-w-[150px] flex flex-col items-center justify-end gap-3">
+                              <div class="w-[29px] h-[180px] bg-[#405DA9] rounded-full"></div>
+                              <p class="text-center text-sm h-[50px]">Lorem ipsum</p>
+                           </div>
+                        </div>
+                        <div class="flex">
+                           <div class="max-w-[150px] flex flex-col items-center justify-end gap-3">
+                              <div class="w-[29px] h-[100px] bg-[#405DA9] rounded-full"></div>
+                              <p class="text-center text-sm h-[50px]">Lorem ipsum</p>
+                           </div>
+                        </div>
+                        <div class="flex">
+                           <div class="max-w-[150px] flex flex-col items-center justify-end gap-3">
+                              <div class="w-[29px] h-[206px] bg-[#405DA9] rounded-full"></div>
+                              <p class="text-center text-sm h-[50px]">Lorem ipsum</p>
+                           </div>
+                        </div>
+                        <div class="flex">
+                           <div class="max-w-[150px] flex flex-col items-center justify-end gap-3">
+                              <div class="w-[29px] h-[140px] bg-[#405DA9] rounded-full"></div>
+                              <p class="text-center text-sm h-[50px]">Lorem ipsum</p>
+                           </div>
+                        </div>
+                        <div class="flex">
+                           <div class="max-w-[150px] flex flex-col items-center justify-end gap-3">
+                              <div class="w-[29px] h-[180px] bg-[#405DA9] rounded-full"></div>
+                              <p class="text-center text-sm h-[50px]">Lorem ipsum</p>
+                           </div>
+                        </div>
+                        <div class="flex">
+                           <div class="max-w-[150px] flex flex-col items-center justify-end gap-3">
+                              <div class="w-[29px] h-[100px] bg-[#405DA9] rounded-full"></div>
+                              <p class="text-center text-sm h-[50px]">Lorem ipsum</p>
+                           </div>
+                        </div>
+                        <div class="flex">
+                           <div class="max-w-[150px] flex flex-col items-center justify-end gap-3">
+                              <div class="w-[29px] h-[180px] bg-[#405DA9] rounded-full"></div>
+                              <p class="text-center text-sm h-[50px]">Lorem ipsum</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+
+   <!-- footer -->
+   <div class="footer px-4 flex items-center bg-[#211F4A] flex-col ">
+      <footer class="flex justify-between items-center text-[14px] text-[white] h-[76px] container mt-3">
+         <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]"
+            src="../logo and icons/header and footer/logo.svg" alt="">
+         <nav class="navbar hidden xl:block">
+            <ul class="navbar-menu md:flex gap-5 ">
+               <li>
+                  <a href="#" class="border-b-2 pb-1">Asosiy</a>
+               </li>
+               <li>
+                  <a href="#">Yangiliklar</a>
+               </li>
+               <li>
+                  <a href="#">Baholash metodikalari</a>
+               </li>
+               <li>
+                  <a href="#">Reyting</a>
+               </li>
+               <li>
+                  <a href="#">
+                     Ishtirokchilar</a>
+               </li>
+               <li>
+                  <a href="#">Normativ-huquqiy hujjatlar</a>
+               </li>
+               <li>
+                  <a href="#">Aloqa</a>
+               </li>
+               <li>
+                  <a href="#">FAQ</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="flex gap-4">
+            <img src="../logo and icons/header and footer/Youtube.svg" alt="">
+            <img src="../logo and icons/header and footer/Telegram.svg" alt="">
+            <img src="../logo and icons/header and footer/Facebook.svg" alt="">
+            <img src="../logo and icons/header and footer/Instagram.svg" alt="">
+         </div>
+      </footer>
+      <div class="footer-bottom grid grid-cols-1 sm:grid-cols-2 text-gray-500 justify-center  mb-5 sm:gap-5">
+         <p class="text-center"><a href="#">www.loremipsum.uz</a></p>
+         <p>Barcha huquqlar himoyalangan</p>
+      </div>
+   </div>
+   <!-- footer end -->
+
+   <script src="../index.js"></script>
+</body>
+
+</html>
