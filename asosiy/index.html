@@ -86,7 +86,8 @@
 
    <!-- hidden navbar -->
    <nav class="hiddenNav hidden px-3 flex justify-center py-2 fixed bg-[#2861F5] w-full z-30">
-      <ul class="navbar-menu container grid max-sm:grid-cols-1 grid-cols-2 text-xs md:flex justify-between gap-5 md:text-sm  text-white mb-5 sm:mb-0">
+      <ul
+         class="navbar-menu container grid max-sm:grid-cols-1 grid-cols-2 text-xs md:flex justify-between gap-5 md:text-sm  text-white mb-5 sm:mb-0">
          <div class="language hidden py-2 max-sm:flex place-content-center gap-1">
             <img src="../logo and icons/asosiy/language.svg" alt="">
             <select class="uppercase bg-transparent text-center border-none">
@@ -96,7 +97,7 @@
          </div>
          <li class="py-2 grid place-content-center">
             <a href="#">Asosiy</a>
-         </li >
+         </li>
          <li class="py-2 grid place-content-center">
             <a href="#">Yangiliklar</a>
          </li>
@@ -119,7 +120,7 @@
          <li class="py-2 grid place-content-center">
             <a href="#">FAQ</a>
          </li>
-         
+
       </ul>
    </nav>
    <!-- hidden navbar end -->
@@ -314,13 +315,17 @@
                class="bg-[#2861F5] font-bold hover:bg-blue-800 text-white rounded-lg text-sm md:text-base w-[150px] h-[35px] lg:w-[180px] lg:h-[50px] hover:shadow-lg hover:shadow-blue-500">BARCHASI</button>
          </div>
 
-         <div class="table_colorScale hidden md:flex flex-col items-center gap-8">
-            <div class="colorScale flex h-[40px] w-[50%]">
-               <button class="green bg-green-500 w-1/3  "></button>
-               <button class="yellow bg-yellow-400 w-1/3"></button>
-               <button class="red bg-red-600 w-1/3 "></button>
+         <div class="table_colorScale flex flex-col items-center gap-8">
+            <div class="colorScale flex h-[40px] w-full sm:w-[70%] gap-3 text-xs sm:text-base md:gap-10">
+               <button class="all border-2 border-blue-500 w-1/4 rounded-3xl uppercase">hammasi</button>
+               <button
+                  class="max  bg-green-600 hover:bg-green-400 w-1/4  rounded-3xl uppercase text-white">yuqori</button>
+               <button class="middle bg-yellow-400 hover:bg-amber-200 w-1/4 rounded-3xl uppercase">o'rtacha</button>
+               <button class="min bg-red-600 hover:bg-red-400 w-1/4 rounded-3xl uppercase text-white">past</button>
             </div>
-            <div class="table overflow-x-auto w-full">
+         </div>
+         <div class="overflow-x-auto">
+            <div class="table w-full">
                <table class="w-full">
                   <thead>
                      <tr class="font-normal text-gray-600">
@@ -328,363 +333,16 @@
                         <th class="border-2 p-3 font-normal">Nomi</th>
                         <th class="border-2 p-3 font-normal">Hudud</th>
                         <th class="border-2 p-3 font-normal">To’plangan ballari</th>
-                        <th class="border-2 p-3 font-normal border-r-0"></th>
-                        <th class="border-2 p-3 font-normal border-l-0"></th>
+                        <th class="border-2 p-3 font-normal"></th>
                      </tr>
                   </thead>
-                  <tbody class="tbody text-gray-600 font-medium">
-                     <tr class="qator h-[140px]">
-                        <td class="border-2">
-                           <div class="flex items-center justify-center">
-                              <img src="../logo and icons/ishtirokchilar reytingi/Frame.svg" alt="">
-                           </div>
-                        </td>
-                        <td class="border-2 px-8">
-                           <div class="flex items-center gap-5">
-                              <div
-                                 class="flex w-[123px] h-[102px] justify-center items-center border-solid border-2 border-gray-200 rounded-lg">
-                                 <img src="../logo and icons/ishtirokchilar reytingi/Akfa universiteti.svg"
-                                    class="w-[100px]" alt="">
-                              </div>
-                              <p class="w-20">Akfa universiteti</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-5">
-                           <div class="flex mt-1 gap-1 text-[14px] justify-center ">
-                              <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
-                              <p>Toshkent shahri</p>
-                           </div>
-                        </td>
-                        <td class="border-2">
-                           <div class="flex justify-center">
-                              <p
-                                 class="ball w-[51px] h-[28px] bg-green-100 flex justify-center items-center rounded-lg font-medium text-green-500">
-                                 6300
-                              </p>
-                           </div>
-                        </td>
-                        <td class="border-2 h-36 box-border p-5">
-                           <div class="w-full h-full flex justify-center items-center relative">
-                              <button
-                                 class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-                           </div>
-                        </td>
-                        <td class="colorGreen w-2 border-2 border-b-0 border-t-0 bg-[#5BBA54]"></td>
-                     </tr>
-                     <tr class="qator h-[140px]">
-                        <td class="border-2">
-                           <div class="flex items-center justify-center">
-                              <img src="../logo and icons/ishtirokchilar reytingi/Frame-1.svg" alt="">
-                           </div>
-                        </td>
-                        <td class="border-2 px-8">
-                           <div class="flex items-center gap-5">
-                              <div
-                                 class="flex w-[123px] h-[102px] justify-center items-center border-solid border-2 border-gray-200 rounded-lg">
-                                 <img src="../logo and icons/ishtirokchilar reytingi/Farg’ona davlat universiteti.svg"
-                                    class="w-[80px]" alt="">
-                              </div>
-                              <p class="w-36">Farg’ona davlat universiteti</p>
-                           </div>
-                        </td>
-                        <td class="border-2">
-                           <div class="flex mt-1 gap-1 text-[14px] justify-center ">
-                              <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
-                              <p>Farg’ona shahri</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-5">
-                           <div class="flex justify-center">
-                              <p
-                                 class="ball w-[51px] h-[28px] bg-green-100 flex justify-center items-center rounded-lg font-medium text-green-500">
-                                 6423
-                              </p>
-                           </div>
-                        </td>
-                        <td class="border-2 h-36 box-border">
-                           <div class="w-full h-full flex justify-center items-center relative">
-                              <button
-                                 class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-                           </div>
-                        </td>
-                        <td class="colorGreen w-2 border-2 border-b-0 border-t-0 bg-[#5BBA54]"></td>
-                     </tr>
-                     <tr class="qator h-[140px]">
-                        <td class="border-2">
-                           <div class="flex items-center justify-center">
-                              <img src="../logo and icons/ishtirokchilar reytingi/Frame-2.svg" alt="">
-                           </div>
-                        </td>
-                        <td class="border-2 px-8">
-                           <div class="flex items-center gap-5">
-                              <div
-                                 class="flex w-[123px] h-[102px] justify-center items-center border-solid border-2 border-gray-200 rounded-lg">
-                                 <img src="../logo and icons/ishtirokchilar reytingi/Andijon davlat universiteti.svg"
-                                    class="w-[80px]" alt="">
-                              </div>
-                              <p class="w-36">Andijon davlat universiteti</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-5">
-                           <div class="flex mt-1 gap-1 text-[14px] justify-center ">
-                              <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
-                              <p>Andijon shahri</p>
-                           </div>
-                        </td>
-                        <td class="border-2">
-                           <div class="flex justify-center">
-                              <p
-                                 class="ball w-[51px] h-[28px] bg-green-100 flex justify-center items-center rounded-lg font-medium text-green-500">
-                                 4587
-                              </p>
-                           </div>
-                        </td>
-                        <td class="border-2 h-36 box-border p-5">
-                           <div class="w-full h-full flex justify-center items-center relative">
-                              <button
-                                 class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-                           </div>
-                        </td>
-                        <td class="colorGreen w-2 border-2 border-b-0 border-t-0 bg-[#93CC88]"></td>
-                     </tr>
-                     <tr class="h-[140px]">
-                        <td class="border-2">
-                           <div class="flex items-center justify-center">
-                              <p class="text-2xl">4</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-8">
-                           <div class="flex items-center gap-5">
-                              <div
-                                 class="flex w-[123px] h-[102px] justify-center items-center border-solid border-2 border-gray-200 rounded-lg">
-                                 <img src="../logo and icons/ishtirokchilar reytingi/Namangan davlat universiteti.svg"
-                                    class="w-[80px]" alt="">
-                              </div>
-                              <p class="w-36">Namangan davlat universiteti</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-5">
-                           <div class="flex mt-1 gap-1 text-[14px] justify-center ">
-                              <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
-                              <p>Namangan shahri</p>
-                           </div>
-                        </td>
-                        <td class="border-2">
-                           <div class="flex justify-center">
-                              <p
-                                 class="ball w-[51px] h-[28px] bg-green-100 flex justify-center items-center rounded-lg font-medium text-green-500">
-                                 5406
-                              </p>
-                           </div>
-                        </td>
-                        <td class="border-2 h-36 box-border p-5">
-                           <div class="w-full h-full flex justify-center items-center relative">
-                              <button
-                                 class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-                           </div>
-                        </td>
-                        <td class="colorYellow w-2 border-2 border-b-0 border-t-0 bg-[#FCBF0E]"></td>
-                     </tr>
-                     <tr class="h-[140px]">
-                        <td class="border-2">
-                           <div class="flex items-center justify-center">
-                              <p class="text-2xl">5</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-8">
-                           <div class="flex items-center gap-5">
-                              <div
-                                 class="flex w-[123px] h-[102px] justify-center items-center border-solid border-2 border-gray-200 rounded-lg">
-                                 <img
-                                    src="../logo and icons/ishtirokchilar reytingi/Islom karimov nomidagi universiteti.svg"
-                                    class="w-[80px]" alt="">
-                              </div>
-                              <p class="w-64">Islom karimov nomidagi Toshkent davlat texnika universiteti</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-5">
-                           <div class="flex mt-1 gap-1 text-[14px] justify-center ">
-                              <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
-                              <p>Toshkent shahri</p>
-                           </div>
-                        </td>
-                        <td class="border-2">
-                           <div class="flex justify-center">
-                              <p
-                                 class="ball w-[51px] h-[28px] bg-green-100 flex justify-center items-center rounded-lg font-medium text-green-500">
-                                 2155
-                              </p>
-                           </div>
-                        </td>
-                        <td class="border-2 h-36 box-border p-5">
-                           <div class="w-full h-full flex justify-center items-center relative">
-                              <button
-                                 class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-                           </div>
-                        </td>
-                        <td class="colorYellow w-2 border-2 border-b-0 border-t-0 bg-[#FCBF0E]"></td>
-                     </tr>
-                     <tr class="h-[140px]">
-                        <td class="border-2">
-                           <div class="flex items-center justify-center">
-                              <p class="text-2xl">6</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-8">
-                           <div class="flex items-center gap-5">
-                              <div
-                                 class="flex w-[123px] h-[102px] justify-center items-center border-solid border-2 border-gray-200 rounded-lg">
-                                 <img
-                                    src="../logo and icons/ishtirokchilar reytingi/Toshkent tibbiyot universiteti Urganch filiali.svg"
-                                    class="w-[80px]" alt="">
-                              </div>
-                              <p class="w-64">Toshkent tibbiyot universiteti Urganch filiali</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-5">
-                           <div class="flex mt-1 gap-1 text-[14px] justify-center ">
-                              <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
-                              <p>Urganch shahri</p>
-                           </div>
-                        </td>
-                        <td class="border-2">
-                           <div class="flex justify-center">
-                              <p
-                                 class="ball w-[51px] h-[28px] bg-green-100 flex justify-center items-center rounded-lg font-medium text-green-500">
-                                 4509
-                              </p>
-                           </div>
-                        </td>
-                        <td class="border-2 h-36 box-border p-5">
-                           <div class="w-full h-full flex justify-center items-center relative">
-                              <button
-                                 class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-                           </div>
-                        </td>
-                        <td class="colorYellow w-2 border-2 border-b-0 border-t-0 bg-[#F59038]"></td>
-                     </tr>
-                     <tr class="h-[140px]">
-                        <td class="border-2">
-                           <div class="flex items-center justify-center">
-                              <p class="text-2xl">7</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-8">
-                           <div class="flex items-center gap-5">
-                              <div
-                                 class="flex w-[123px] h-[102px] justify-center items-center border-solid border-2 border-gray-200 rounded-lg">
-                                 <img
-                                    src="../logo and icons/ishtirokchilar reytingi/Toshkent axborot texnogoliyalari Universiteti.svg"
-                                    class="w-[80px]" alt="">
-                              </div>
-                              <p class="w-64">Muhammad Al Xorazmiy nomidagi Toshkent axborot texnogoliyalari Universiteti
-                              </p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-5">
-                           <div class="flex mt-1 gap-1 text-[14px] justify-center ">
-                              <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
-                              <p>Toshkent shahri</p>
-                           </div>
-                        </td>
-                        <td class="border-2">
-                           <div class="flex justify-center">
-                              <p
-                                 class="ball w-[51px] h-[28px] bg-green-100 flex justify-center items-center rounded-lg font-medium text-green-500">
-                                 1200
-                              </p>
-                           </div>
-                        </td>
-                        <td class="border-2 h-36 box-border p-5">
-                           <div class="w-full h-full flex justify-center items-center relative">
-                              <button
-                                 class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-                           </div>
-                        </td>
-                        <td class="w-2 border-2 border-b-0 border-t-0 bg-[#F1575F]"></td>
-                     </tr>
-                     <tr class="h-[140px]">
-                        <td class="border-2">
-                           <div class="flex items-center justify-center">
-                              <p class="text-2xl">8</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-8">
-                           <div class="flex items-center gap-5">
-                              <div
-                                 class="flex w-[123px] h-[102px] justify-center items-center border-solid border-2 border-gray-200 rounded-lg">
-                                 <img
-                                    src="../logo and icons/ishtirokchilar reytingi/Qo'qon davlat pedagogika instituti.svg"
-                                    class="w-[70px]" alt="">
-                              </div>
-                              <p class="w-64">Qo'qon davlat pedagogika instituti</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-5">
-                           <div class="flex mt-1 gap-1 text-[14px] justify-center ">
-                              <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
-                              <p>Qo’qon shahri</p>
-                           </div>
-                        </td>
-                        <td class="border-2">
-                           <div class="flex justify-center">
-                              <p
-                                 class="ball w-[51px] h-[28px] bg-green-100 flex justify-center items-center rounded-lg font-medium text-green-500">
-                                 3251
-                              </p>
-                           </div>
-                        </td>
-                        <td class="border-2 h-36 box-border p-5">
-                           <div class="w-full h-full flex justify-center items-center relative">
-                              <button
-                                 class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-                           </div>
-                        </td>
-                        <td class="colorRed w-2 border-2 border-b-0 border-t-0 bg-[#DA2129]"></td>
-                     </tr>
-                     <tr class="h-[140px]">
-                        <td class="border-2">
-                           <div class="flex items-center justify-center">
-                              <p class="text-2xl">9</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-8">
-                           <div class="flex items-center gap-5">
-                              <div
-                                 class="flex w-[123px] h-[102px] justify-center items-center border-solid border-2 border-gray-200 rounded-lg">
-                                 <img src="../logo and icons/ishtirokchilar reytingi/Farg'ona politexnika instituti.svg"
-                                    class="w-[90px]" alt="">
-                              </div>
-                              <p class="w-64">Farg'ona politexnika instituti</p>
-                           </div>
-                        </td>
-                        <td class="border-2 px-5">
-                           <div class="flex mt-1 gap-1 text-[14px] justify-center ">
-                              <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
-                              <p>Farg’ona shahri</p>
-                           </div>
-                        </td>
-                        <td class="border-2">
-                           <div class="flex justify-center">
-                              <p
-                                 class="ball w-[51px] h-[28px] bg-green-100 flex justify-center items-center rounded-lg font-medium text-green-500">
-                                 2592
-                              </p>
-                           </div>
-                        </td>
-                        <td class="border-2 h-36 box-border p-5">
-                           <div class="w-full h-full flex justify-center items-center relative">
-                              <button
-                                 class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-                           </div>
-                        </td>
-                        <td class="colorRed w-2 border-2 border-t-0 bg-[#DA2129]"></td>
-                     </tr>
-                  </tbody>
+                  <tbody class="tbody text-gray-600 font-medium"></tbody>
                </table>
             </div>
-            
          </div>
+
+
+      </div>
       </div>
    </section>
    <!-- ishtirokchilar reytingi end -->
@@ -695,7 +353,7 @@
       <div class="container py-6 sm:py-8 lg:py-16 flex flex-col justify-between gap-7">
          <div class="overflow-x-auto mb-10">
             <div class="min-w-[1200px] h-[426px] bg-white rounded-xl py-6 px-8">
-               <div class="h-[10%] uppercase text-xl md:text-3xl font-bold">statistika</div>
+               <h1 class="h-[10%] uppercase text-xl md:text-3xl font-bold">statistika</h1>
                <div class="flex h-[90%] pt-5 text-gray-400 gap-2">
                   <div class="h-[90%] flex flex-col justify-around min-w-[150px]">
                      <p>1 000 000</p>
