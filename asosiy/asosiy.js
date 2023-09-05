@@ -1,3 +1,4 @@
+const table = document.querySelector('.table')
 const tbody = document.querySelector('.tbody')
 const all = document.querySelector('.all')
 const max = document.querySelector('.max')
@@ -15,7 +16,7 @@ function dataApi() {
       .then((data) => {
          getArr(data.data);
       })
-   .catch(() => alert("Xatolik yuz berdi!"));
+      .catch(() => alert("Xatolik yuz berdi!"));
 }
 dataApi()
 
@@ -113,7 +114,7 @@ function getMin(res, mas) {
       mas[i]
       minArr.push(mas[i])
    }
-   
+
    let generateMin = []
    for (let i = 0; i < res.length; i++) {
       for (let j = 0; j < minArr.length; j++) {
@@ -155,46 +156,70 @@ function generateAll(res) {
 
    res.map((item) => {
       const tableBody = document.createElement('tr')
-      tableBody.classList.add('h-[140px]');
+
 
 
       tableBody.innerHTML = `
-      <td class="border-2">
+      <td class="border-2 border-black">
          <div class="flex items-center justify-center">
             ${n++}
          </div>
       </td>
-      <td class="border-2 px-8">
+      <td class="border-2 border-black px-8 py-1 md:py-3">
          <div class="flex items-center gap-5">
             <div
-               class="flex w-[123px] h-[102px] justify-center items-center border-solid border-2 border-gray-200 rounded-lg">
+               class="flex min-w-[70px] md:min-w-[123px] min-h-[60px] md:min-h-[102px] justify-center items-center bg-white border-solid border-2 border-gray-200 rounded-lg">
                <img src="${item.img}"
-                  class="w-[80px]" alt="">
+                  class="w-[50px] md:w-[80px]" alt="">
             </div>
-            <p class="w-56">${item.name}</p>
+            <p class="md:w-56">${item.name}</p>
          </div>
       </td>
-      <td class="border-2 px-5">
-         <div class="flex mt-1 gap-1 text-[14px] justify-center ">
+      <td class="border-2 border-black px-5">
+         <div class="flex mt-1 gap-1 text-xs md:text-sm justify-center ">
             <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
             <p>${item.hudud}</p>
          </div>
       </td>
-      <td class="border-2">
+      <td class="border-2 border-black">
          <div class="flex justify-center">
             <p
-               class="ball w-[51px] h-[28px] bg-green-100 flex justify-center items-center rounded-lg font-medium text-green-500">
+               class="ball w-[51px] h-[28px] bg-gray-100 flex justify-center items-center rounded-lg font-medium">
                ${item.ball}
             </p>
          </div>
       </td>
-      <td class="border-2 h-36 box-border p-5">
-         <div class="w-full h-full flex justify-center items-center relative">
-            <button
-               class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-         </div>
+      <td class="border-2 border-black">
+      <div class="w-full h-full flex justify-center items-center px-3">
+         <button
+            class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
+      </div>
       </td>
       `
       tbody.appendChild(tableBody);
    })
 }
+
+all.addEventListener("click", () => {
+   table.classList.remove('green')
+   table.classList.remove('yellow')
+   table.classList.remove('red')
+})
+max.addEventListener("click", () => {
+   table.classList.remove('green')
+   table.classList.remove('yellow')
+   table.classList.remove('red')
+   table.classList.add('green')
+})
+middle.addEventListener("click", () => {
+   table.classList.remove('green')
+   table.classList.remove('yellow')
+   table.classList.remove('red')
+   table.classList.add('yellow')
+})
+min.addEventListener("click", () => {
+   table.classList.remove('green')
+   table.classList.remove('yellow')
+   table.classList.remove('red')
+   table.classList.add('red')
+})
