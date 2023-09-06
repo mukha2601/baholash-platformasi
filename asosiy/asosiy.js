@@ -1,10 +1,10 @@
 const table = document.querySelector('.table')
 const tbody = document.querySelector('.tbody')
+const api_url = './data.json'
 const all = document.querySelector('.all')
 const max = document.querySelector('.max')
 const middle = document.querySelector('.middle')
 const min = document.querySelector('.min')
-const api_url = './data.json';
 let n = 1;
 
 
@@ -157,7 +157,7 @@ function generateAll(res) {
    res.map((item) => {
       const tableBody = document.createElement('tr')
 
-      
+
       tableBody.innerHTML = `
       <td class="border-2 border-black">
          <div class="flex items-center justify-center">
