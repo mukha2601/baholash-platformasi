@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../index.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <!-- option bar -->
+   <div
+      class="option-bar hidden z-20 justify-between rounded-l-lg py-3 option-bar fixed w-[56px] h-[206px] bg-white right-0 top-[50%] translate-y-[-50%] md:flex flex-col  items-center">
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/dark_mode_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/volume_up_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/text_fields_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/invert_colors_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+   </div>
+
+   <!-- header -->
+   <div class="px-4 header flex justify-center bg-[#211F4A] sticky top-0 z-50">
+      <header class="flex justify-between items-center text-[14px] text-[white] h-[76px] container ">
+         <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]"
+            src="../logo and icons/header and footer/logo.svg" alt="">
+         <nav class="navbar hidden xl:block">
+            <ul class="navbar-menu md:flex gap-5 ">
+               <li>
+                  <a href="../asosiy/asosiy.html" class="border-b-2 pb-1">Asosiy</a>
+               </li>
+               <li>
+                  <a href="#">Yangiliklar</a>
+               </li>
+               <li>
+                  <a href="#">Baholash metodikalari</a>
+               </li>
+               <li>
+                  <a href="#">Reyting</a>
+               </li>
+               <li>
+                  <a href="#">
+                     Ishtirokchilar</a>
+               </li>
+               <li>
+                  <a href="#">Normativ-huquqiy hujjatlar</a>
+               </li>
+               <li>
+                  <a href="#">Aloqa</a>
+               </li>
+               <li>
+                  <a href="#">FAQ</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="flex gap-4">
+            <div class="language  max-sm:hidden flex gap-1">
+               <img src="../logo and icons/asosiy/language.svg" alt="">
+               <select class="uppercase bg-transparent text-center border-none outline-none">
+                  <option class="text-black ">uz</option>
+                  <option class="text-black">ru</option>
+               </select>
+            </div>
+            <button
+               class="text-xs md:text-sm rounded-lg bg-[#2861F5] hover:bg-white hover:text-blue-800 py-2 px-4 color hover:shadow-lg hover:shadow-blue-300">Tizimga
+               kirish
+            </button>
+            <button class="btnBurger block xl:hidden border-[#2861F5] border-2 rounded-lg px-2">
+               <img class="w-[25px]" src="../logo and icons/ishtirokchilar/bar.svg" alt="">
+            </button>
+         </div>
+      </header>
+   </div>
+   <!-- header end -->
+
+   <nav class="hiddenNav hidden px-3 flex justify-center py-2 fixed bg-[#2861F5] w-full z-30">
+      <ul
+         class="navbar-menu container grid max-sm:grid-cols-1 grid-cols-2 text-xs md:flex justify-between gap-5 md:text-sm  text-white mb-5 sm:mb-0">
+         <div class="language hidden py-2 max-sm:flex place-content-center gap-1">
+            <img src="../logo and icons/asosiy/language.svg" alt="">
+            <select class="uppercase bg-transparent text-center border-none">
+               <option class="text-black">uz</option>
+               <option class="text-black">ru</option>
+            </select>
+         </div>
+         <li class="py-2 grid place-content-center">
+            <a href="../asosiy/asosiy.html">Asosiy</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Yangiliklar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Baholash metodikalari</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Reyting</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">
+               Ishtirokchilar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Normativ-huquqiy hujjatlar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Aloqa</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">FAQ</a>
+         </li>
+
+      </ul>
+   </nav>
+
+   <!-- ishtirokchilar -->
+   <section class="ishtirokchilar px-3 w-full flex justify-center bg-[#F1F3F9]">
+      <div class="container py-6 sm:py-8 lg:py-16 flex flex-col justify-between gap-7">
+         <h1 class="text-xl md:text-3xl font-bold uppercase">yangiliklar</h1>
+
+
+         <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
+            <div class="sm:col-span-3 col-span-2 rounded-lg relative">
+               <div class="absolute bottom-0 p-2 sm:p-5 text-white flex flex-col gap-1 sm:gap-2">
+                  <p>
+                     <span class="date text-xs md:text-sm">11.06.2023</span>
+                     <span class="time text-xs md:text-sm">13:00</span>
+                  </p>
+                  <p class="font-bold text-xs lg:text-xl md:w-[80%]">Ilmiy maqola nima uchun va qanday yoziladi? -
+                     xorijiy universitetda ishlayotgan o‘zbek olimidan maslahatlar
+                  </p>
+               </div>
+               <img src="../logo and icons/yangiliklar/Rectangle 14.svg" alt=""
+                  class="w-full h-full object-cover rounded-lg">
+            </div>
+
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 16.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+            
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 15-2.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+            
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 15-3.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 16.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+            
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 15-2.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 15-3.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 16.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+            
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 15-2.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 15-3.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 16.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+            
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 15-2.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+
+            <div class=" flex flex-col justify-between gap-1 sm:gap-2 rounded-lg">
+               <img src="../logo and icons/yangiliklar/Rectangle 15-3.svg" class="object-cover" alt="">
+               <p>
+                  <span class="date text-xs md:text-sm">11.06.2023</span>
+                  <span class="time text-xs md:text-sm">13:00</span>
+               </p>
+               <p class="font-bold text-xs lg:text-xl">Yaponiya toza energiya eksport qilish uchun pauerbank-kema
+                  quradi
+               </p>
+            </div>
+
+         </div>
+      </div>
+
+      </div>
+   </section>
+   <!-- ishtirokchilar end -->
+
+
+
+
+
+
+   <!-- footer -->
+   <div class="footer px-4 flex items-center bg-[#211F4A] flex-col ">
+      <footer class="flex justify-between items-center text-[14px] text-[white] h-[76px] container mt-3">
+         <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]"
+            src="../logo and icons/header and footer/logo.svg" alt="">
+         <nav class="navbar hidden xl:block">
+            <ul class="navbar-menu md:flex gap-5 ">
+               <li>
+                  <a href="#" class="border-b-2 pb-1">Asosiy</a>
+               </li>
+               <li>
+                  <a href="#">Yangiliklar</a>
+               </li>
+               <li>
+                  <a href="#">Baholash metodikalari</a>
+               </li>
+               <li>
+                  <a href="#">Reyting</a>
+               </li>
+               <li>
+                  <a href="#">
+                     Ishtirokchilar</a>
+               </li>
+               <li>
+                  <a href="#">Normativ-huquqiy hujjatlar</a>
+               </li>
+               <li>
+                  <a href="#">Aloqa</a>
+               </li>
+               <li>
+                  <a href="#">FAQ</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="flex gap-4">
+            <img src="../logo and icons/header and footer/Youtube.svg" alt="">
+            <img src="../logo and icons/header and footer/Telegram.svg" alt="">
+            <img src="../logo and icons/header and footer/Facebook.svg" alt="">
+            <img src="../logo and icons/header and footer/Instagram.svg" alt="">
+         </div>
+      </footer>
+      <div class="footer-bottom grid grid-cols-1 sm:grid-cols-2 text-gray-500 justify-center  mb-5 sm:gap-5">
+         <p class="text-center"><a href="#">www.loremipsum.uz</a></p>
+         <p>Barcha huquqlar himoyalangan</p>
+      </div>
+   </div>
+   <!-- footer end -->
+
+   <script src="../index.js"></script>
+</body>
+
+</html>
