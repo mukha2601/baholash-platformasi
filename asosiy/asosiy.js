@@ -157,8 +157,7 @@ function generateAll(res) {
    res.map((item) => {
       const tableBody = document.createElement('tr')
 
-
-
+      
       tableBody.innerHTML = `
       <td class="border-2 border-black">
          <div class="flex items-center justify-center">
