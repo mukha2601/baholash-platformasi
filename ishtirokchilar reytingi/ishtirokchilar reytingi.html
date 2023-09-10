@@ -7,9 +7,7 @@
    <title>Baholash platformasi</title>
    <link rel="stylesheet" href="../index.css">
    <script src="https://cdn.tailwindcss.com"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="./jqvmap/jqvmap.min.css">
 </head>
 
 <body>
@@ -144,27 +142,82 @@
             </div>
          </div>
 
+         <div class="flex justify-between items-center max-sm:flex-col max-sm:items-start gap-4">
+            <h1 class="text-xl md:text-3xl font-bold uppercase">Ishtirokchilar reytingi</h1>
+            <div class="input flex px-3 py-1 bg-white w-full sm:w-[250px] lg:w-[450px] rounded-xl gap-2">
+               <img src="../logo and icons/ishtirokchilar/Search.svg" alt="">
+               <input class="p-2 w-full outline-none" type="text" placeholder="Qidiruv">
+            </div>
+         </div>
 
-         <table class="w-full">
-            <thead>
-               <tr class="font-normal text-gray-600">
-                  <th class="border-2 p-3 font-normal w-5">Reyting</th>
-                  <th class="border-2 p-3 font-normal">Nomi</th>
-                  <th class="border-2 p-3 font-normal">To’plangan ballari</th>
-                  <th class="border-2 p-3 font-normal"></th>
-               </tr>
-            </thead>
-            <tbody class="tbody text-gray-600 font-medium"></tbody>
-         </table>
+         <div class="grid max-[500px]:grid-cols-1 grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="flex flex-col w-full gap-1">
+               <label class="text-gray-500">Yil</label>
+               <div class="relative flex items-center">
+                  <select name="year" class="p-3 ps-14 rounded-lg w-full appearance-none relative">
+                     <option>2023</option>
+                     <option>2022</option>
+                     <option>2021</option>
+                     <option>2020</option>
+                     <option>2019</option>
+                  </select>
+                  <img class="w-[15px] absolute left-5 " src="../logo and icons/ishtirokchilar reytingi/down.svg" alt="">
+               </div>
+            </div>
+            <div class="flex flex-col w-full gap-1">
+               <label class="text-gray-500">Turi</label>
+               <div class="relative flex items-center">
+                  <select name="year" class="p-3 ps-14 rounded-lg w-full appearance-none relative">
+                     <option>Tanlang</option>
+                  </select>
+                  <img class="w-[15px] absolute left-5 " src="../logo and icons/ishtirokchilar reytingi/down.svg" alt="">
+               </div>
+            </div>
+            <div class="flex flex-col w-full gap-1">
+               <label class="text-gray-500">Vazirlik</label>
+               <div class="relative flex items-center">
+                  <select name="year" class="p-3 ps-14 rounded-lg w-full appearance-none relative">
+                     <option>Tanlang</option>
+                  </select>
+                  <img class="w-[15px] absolute left-5" src="../logo and icons/ishtirokchilar reytingi/down.svg" alt="">
+               </div>
+            </div>
+            <div class="flex flex-col w-full gap-1">
+               <label class="text-gray-500">Vazirlik</label>
+               <div class="relative flex items-center">
+                  <select name="year" class="p-3 ps-14 rounded-lg w-full appearance-none relative">
+                     <option>Tanlang</option>
+                  </select>
+                  <img class="w-[15px] absolute left-5 " src="../logo and icons/ishtirokchilar reytingi/down.svg" alt="">
+               </div>
+            </div>
+         </div>
 
 
-         <div class="flex justify-between items-center gap-5">
+         <div class="overflow-x-auto">
+            <div class="table w-full">
+               <table class="w-full border-black border-2 ">
+                  <thead>
+                     <tr class="font-normal text-gray-600 text-xs md:text-base">
+                        <th class="border-2 border-x-0 border-black p-1 md:p-3 w-5 rounded-md">№</th>
+                        <th class=" border-x-0 border-black p-1 md:p-3">Nomi</th>
+                        <th class="border-2 border-x-0 border-black p-1 md:p-3">To’plangan ballari</th>
+                        <th class="border-2 border-x-0 border-black p-1 md:p-3"></th>
+                     </tr>
+                  </thead>
+                  <tbody class="tbody text-xs md:text-base text-gray-600 font-medium"></tbody>
+               </table>
+            </div>
+         </div>
+
+
+         <div class="flex justify-between items-center gap-5 mt-8">
             <div>
                <h1 class="text-xl md:text-3xl font-bold uppercase">Ishtirokchilar</h1>
                <p class="text-xs lg:text-lg">Bu yerda baholashda ishtirok etayotgan tashkilotlar ro’yxati keltirilgan
                </p>
             </div>
-            <a class="w-[150px] h-[35px] lg:w-[180px] lg:h-[50px]" href="../ishtirokchilar/ishtirokchilar.html">
+            <a class="w-[150px] h-[35px] lg:w-[180px] lg:h-[50px]" href="../ishtirokchilar reytingi/ishtirokchilar reytingi_page.html">
                <button
                   class="bg-[#2861F5] font-bold hover:bg-blue-800 text-white rounded-lg text-sm md:text-base w-full h-full  hover:shadow-lg hover:shadow-blue-500">BARCHASI</button>
             </a>
