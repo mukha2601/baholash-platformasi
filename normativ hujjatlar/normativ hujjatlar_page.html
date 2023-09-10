@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Baholash platformasi</title>
+   <link rel="stylesheet" href="../index.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- modal -->
+   <div class="hidden modal_window w-full h-screen fixed bg-[#54545449] flex justify-center items-center">
+      <div class="modal w-[500px] h-[300px] bg-white rounded-2xl p-9 flex flex-col justify-between">
+         <div class="flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold ">Ulashish</h1>
+            <button class="closeBtn p-3">
+               <img class="w-4" src="../logo and icons/normativ hujjatlar/x-solid.svg" alt="">
+            </button>
+         </div>
+         <div class="flex justify-between">
+            <a href="#" class="flex flex-col items-center justify-between">
+               <img src="../logo and icons/normativ hujjatlar/telegram.svg" class="w-14" alt="">
+               <p>Telegram</p>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-between">
+               <img src="../logo and icons/normativ hujjatlar/facebook.svg" class="w-14" alt="">
+               <p>Facebook</p>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-between">
+               <img src="../logo and icons/normativ hujjatlar/square-x-twitter.svg" class="w-14" alt="">
+               <p>Facebook</p>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-between">
+               <img src="../logo and icons/normativ hujjatlar/vk.svg" class="w-14" alt="">
+               <p>Facebook</p>
+            </a>
+         </div>
+
+         <div class="link flex justify-between items-center p-1.5 rounded-xl bg-[#F8FAFC] border-2">
+            <p class="ms-4">https://orginfo.uz/organization/744c022a64ad</p>
+            <button class="bg-blue-600 w-8 h-8 rounded-xl flex justify-center items-center">
+               <img src="../logo and icons/normativ hujjatlar/Copy.svg" alt="">
+            </button>
+         </div>
+      </div>
+   </div>
+   <!-- modal end -->
+
+   <!-- option bar -->
+   <div
+      class="option-bar hidden z-20 justify-between rounded-l-lg py-3 option-bar fixed w-[56px] h-[206px] bg-white right-0 top-[50%] translate-y-[-50%] md:flex flex-col  items-center">
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/dark_mode_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/volume_up_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/text_fields_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/invert_colors_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+   </div>
+
+
+
+   <!-- header -->
+   <div class="px-4 header flex justify-center bg-[#211F4A] sticky top-0 z-50">
+      <header class="flex justify-between items-center text-[14px] text-[white] h-[76px] container ">
+         <a href="../asosiy/asosiy.html">
+            <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]"
+               src="../logo and icons/header and footer/logo.svg" alt="">
+         </a>
+         <nav class="navbar hidden xl:block">
+            <ul class="navbar-menu md:flex gap-5 ">
+               <li>
+                  <a href="#" class="border-b-2 pb-1">Asosiy</a>
+               </li>
+               <li>
+                  <a href="#">Yangiliklar</a>
+               </li>
+               <li>
+                  <a href="#">Baholash metodikalari</a>
+               </li>
+               <li>
+                  <a href="#">Reyting</a>
+               </li>
+               <li>
+                  <a href="#">
+                     Ishtirokchilar</a>
+               </li>
+               <li>
+                  <a href="#">Normativ-huquqiy hujjatlar</a>
+               </li>
+               <li>
+                  <a href="#">Aloqa</a>
+               </li>
+               <li>
+                  <a href="#">FAQ</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="flex gap-4">
+            <div class="language max-sm:hidden flex gap-1">
+               <img src="../logo and icons/asosiy/language.svg" alt="">
+               <select class="uppercase bg-transparent text-center border-none outline-none">
+                  <option class="text-black">uz</option>
+                  <option class="text-black">ru</option>
+               </select>
+            </div>
+            <button
+               class="text-xs md:text-sm rounded-lg bg-[#2861F5] hover:bg-white hover:text-blue-800 py-2 px-4 color hover:shadow-lg hover:shadow-blue-300">Tizimga
+               kirish
+            </button>
+            <button class="btnBurger block xl:hidden border-[#2861F5] border-2 rounded-lg px-2">
+               <img class="w-[25px]" src="../logo and icons/ishtirokchilar/bar.svg" alt="">
+            </button>
+         </div>
+      </header>
+   </div>
+   <!-- header end -->
+
+   <!-- hidden navbar -->
+   <nav class="hiddenNav hidden px-3 flex justify-center py-2 fixed bg-[#2861F5] w-full z-30">
+      <ul
+         class="navbar-menu container grid max-sm:grid-cols-1 grid-cols-2 text-xs md:flex justify-between gap-5 md:text-sm  text-white mb-5 sm:mb-0">
+         <div class="language hidden py-2 max-sm:flex place-content-center gap-1">
+            <img src="../logo and icons/asosiy/language.svg" alt="">
+            <select class="uppercase bg-transparent text-center border-none">
+               <option class="text-black">uz</option>
+               <option class="text-black">ru</option>
+            </select>
+         </div>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Asosiy</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Yangiliklar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Baholash metodikalari</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Reyting</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">
+               Ishtirokchilar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Normativ-huquqiy hujjatlar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Aloqa</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">FAQ</a>
+         </li>
+
+      </ul>
+   </nav>
+   <!-- hidden navbar end -->
+
+
+
+   <!-- ishtirokchilar -->
+   <section class="ishtirokchilar px-4 w-full flex justify-center bg-[#F1F3F9]">
+      <div class="container py-6 sm:py-8 lg:py-16 flex flex-col justify-between gap-7">
+         <h1 class="text-xl md:text-2xl font-bold ">Lorem Ipsum is simply</h1>
+         <div class="grid grid-cols-3 gap-16">
+            <div class="col-span-2 flex flex-col gap-8">
+               <p class="text-xs lg:text-lg w-full text-gray-600">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum.
+                  Why do we use it?
+                  It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like
+                  readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                  default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                  Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                  humour and the like).
+               </p>
+
+               <p>
+                  Where does it come from?
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                  classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                  professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                  literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
+                  "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book
+                  is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
+                  Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+               </p>
+
+               <p>Where does it come from?
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                  classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                  professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                  literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
+                  "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book
+                  is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
+                  Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            </div>
+            <div class="p-4 bg-white h-fit rounded-xl flex flex-col gap-5">
+               <button class="flex gap-3 p-2 bg-[#F9FBFF] rounded-lg">
+                  <img class="w-[20px]" src="../logo and icons/normativ hujjatlar/zip.svg" alt="">
+                  <p class="text-xs md:text-base font-medium">Yuklab olish.pdf</p>
+               </button>
+               <button class="flex gap-3 p-2 bg-[#F9FBFF] rounded-lg">
+                  <img class="w-[20px]" src="../logo and icons/normativ hujjatlar/pdf.svg" alt="">
+                  <p class="text-xs md:text-base font-medium">Yuklab olish.pdf</p>
+               </button>
+               <button class="flex gap-3 p-2 bg-[#F9FBFF] rounded-lg">
+                  <img class="w-[20px]" src="../logo and icons/normativ hujjatlar/doc.svg" alt="">
+                  <p class="text-xs md:text-base font-medium">Yuklab olish.pdf</p>
+               </button>
+               <button class="share flex gap-3 p-2 bg-[#F9FBFF] rounded-lg">
+                  <img class="w-[20px]" src="../logo and icons/normativ hujjatlar/share.svg" alt="">
+                  <p class="text-xs md:text-base font-medium">Ulashish</p>
+               </button>
+            </div>
+         </div>
+
+         <div class="overflow-x-auto">
+            <div class="table w-full">
+               <table class="w-full bg-white border-collapse">
+                  <thead>
+                     <tr class="font-normal text-gray-600 text-xs w-full h-full">
+                        <th class="border-2 p-1 md:p-3 w-5 rounded-md">№</th>
+                        <th class="border-2 p-1 md:p-3 text-start min-w-[250px]">Индикатор номланиши</th>
+                        <th class="border-2 p-1 md:p-3">Ўлчов бирлиги</th>
+                        <th class=" border-2  min-w-[250px] justify-between">
+                           <p class="col-span-5 h-8 border-b-2 flex justify-center items-center">Амалдаги
+                              кўрсаткич (2021)
+                           </p>
+                           <div class="flex justify-between w-full">
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">I</p>
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">II</p>
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">III</p>
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">IV</p>
+                              <p class="h-8 flex justify-center items-center flex-1">йил</p>
+                           </div>
+                        </th>
+                        <th class=" border-2  min-w-[250px] justify-between">
+                           <p class="col-span-5 h-8 border-b-2 flex justify-center items-center">Мақсадли
+                              кўрсаткич (2022)
+                           </p>
+                           <div class="flex justify-between w-full">
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">I</p>
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">II</p>
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">III</p>
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">IV</p>
+                              <p class="h-8 flex justify-center items-center flex-1">йил</p>
+                           </div>
+                        </th>
+                        <th class=" border-2  min-w-[250px] justify-between">
+                           <p class="col-span-5 h-8 border-b-2 flex justify-center items-center">Йиллар бўйича
+                              кўрсаткичлар
+                           </p>
+                           <div class="flex justify-between w-full">
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">2023</p>
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">2024</p>
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">2025</p>
+                              <p class="h-8 flex justify-center border-e-2 items-center flex-1">2026</p>
+                              <p class="h-8 flex justify-center items-center flex-1">2027</p>
+                           </div>
+                        </th>
+
+                     </tr>
+                  </thead>
+                  <tbody class="tbody text-xs md:text-base text-gray-600 font-medium">
+                     <tr>
+                        <td class="border-2">
+                           <div class="flex items-center justify-center">
+                              1
+                           </div>
+                        </td>
+                        <td class="p-2 md:py-3 border-2">
+                           <div class="flex items-center gap-5">
+                              <p>Ишланма ва тадқиқотларга ажратилган хорижий грантлар ҳажми</p>
+                           </div>
+                        </td>
+
+                        <td class="border-2">
+                           <div class="flex justify-center p-2">
+                              Дона
+                           </div>
+                        </td>
+                        <td class="border-2 h-10">
+                           <div class="flex justify-between h-full">
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center">564</p>
+                           </div>
+                        </td>
+                        <td class="border-2 h-10">
+                           <div class="flex justify-between h-full">
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center">564</p>
+                           </div>
+                        </td>
+                        <td class="border-2 h-10">
+                           <div class="flex justify-between h-full">
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center border-e-2">564</p>
+                              <p class="h-full flex-1 flex justify-center items-center">564</p>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <div class="py-4 px-5 bg-white border-2 border-t-0  rounded-b-lg">
+                  <div class="bg-blue-600 h-3 rounded-2xl w-[90%]"></div>
+               </div>
+            </div>
+         </div>
+
+
+      </div>
+      </div>
+   </section>
+   <!-- ishtirokchilar end -->
+
+
+
+   <!-- footer -->
+   <div class="footer px-4 flex items-center bg-[#211F4A] flex-col ">
+      <footer class="flex justify-between items-center text-[14px] text-[white] h-[76px] container mt-3">
+         <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]"
+            src="../logo and icons/header and footer/logo.svg" alt="">
+         <nav class="navbar hidden xl:block">
+            <ul class="navbar-menu md:flex gap-5 ">
+               <li>
+                  <a href="#" class="border-b-2 pb-1">Asosiy</a>
+               </li>
+               <li>
+                  <a href="#">Yangiliklar</a>
+               </li>
+               <li>
+                  <a href="#">Baholash metodikalari</a>
+               </li>
+               <li>
+                  <a href="#">Reyting</a>
+               </li>
+               <li>
+                  <a href="#">
+                     Ishtirokchilar</a>
+               </li>
+               <li>
+                  <a href="#">Normativ-huquqiy hujjatlar</a>
+               </li>
+               <li>
+                  <a href="#">Aloqa</a>
+               </li>
+               <li>
+                  <a href="#">FAQ</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="flex gap-4">
+            <img src="../logo and icons/header and footer/Youtube.svg" alt="">
+            <img src="../logo and icons/header and footer/Telegram.svg" alt="">
+            <img src="../logo and icons/header and footer/Facebook.svg" alt="">
+            <img src="../logo and icons/header and footer/Instagram.svg" alt="">
+         </div>
+      </footer>
+      <div class="footer-bottom grid grid-cols-1 sm:grid-cols-2 text-gray-500 justify-center  mb-5 sm:gap-5">
+         <p class="text-center"><a href="#">www.loremipsum.uz</a></p>
+         <p>Barcha huquqlar himoyalangan</p>
+      </div>
+   </div>
+   <!-- footer end -->
+
+   <script src="../normativ hujjatlar/normativ hujjatlar.js"></script>
+   <script src="../index.js"></script>
+</body>
+
+</html>
