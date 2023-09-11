@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Baholash platformasi</title>
+   <link rel="stylesheet" href="../index.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- option bar -->
+   <div
+      class="option-bar hidden z-20 justify-between rounded-l-lg py-3 option-bar fixed w-[56px] h-[206px] bg-white right-0 top-[50%] translate-y-[-50%] md:flex flex-col  items-center">
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/dark_mode_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/volume_up_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/text_fields_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+      <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
+         <img src="../logo and icons/mini optinal panel/invert_colors_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+      </button>
+   </div>
+
+
+
+   <!-- header -->
+   <div class="px-4 header flex justify-center bg-[#211F4A] sticky top-0 z-50">
+      <header class="flex justify-between items-center text-[14px] text-[white] h-[76px] container ">
+         <a href="../asosiy/asosiy.html">
+            <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]"
+               src="../logo and icons/header and footer/logo.svg" alt="">
+         </a>
+         <nav class="navbar hidden xl:block">
+            <ul class="navbar-menu md:flex gap-5 ">
+               <li>
+                  <a href="#" class="border-b-2 pb-1">Asosiy</a>
+               </li>
+               <li>
+                  <a href="#">Yangiliklar</a>
+               </li>
+               <li>
+                  <a href="#">Baholash metodikalari</a>
+               </li>
+               <li>
+                  <a href="#">Reyting</a>
+               </li>
+               <li>
+                  <a href="#">
+                     Ishtirokchilar</a>
+               </li>
+               <li>
+                  <a href="#">Normativ-huquqiy hujjatlar</a>
+               </li>
+               <li>
+                  <a href="#">Aloqa</a>
+               </li>
+               <li>
+                  <a href="#">FAQ</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="flex gap-4">
+            <div class="language max-sm:hidden flex gap-1">
+               <img src="../logo and icons/asosiy/language.svg" alt="">
+               <select class="uppercase bg-transparent text-center border-none outline-none">
+                  <option class="text-black">uz</option>
+                  <option class="text-black">ru</option>
+               </select>
+            </div>
+            <button
+               class="text-xs md:text-sm rounded-lg bg-[#2861F5] hover:bg-white hover:text-blue-800 py-2 px-4 color hover:shadow-lg hover:shadow-blue-300">Tizimga
+               kirish
+            </button>
+            <button class="btnBurger block xl:hidden border-[#2861F5] border-2 rounded-lg px-2">
+               <img class="w-[25px]" src="../logo and icons/ishtirokchilar/bar.svg" alt="">
+            </button>
+         </div>
+      </header>
+   </div>
+   <!-- header end -->
+
+   <!-- hidden navbar -->
+   <nav class="hiddenNav hidden px-3 flex justify-center py-2 fixed bg-[#2861F5] w-full z-30">
+      <ul
+         class="navbar-menu container grid max-sm:grid-cols-1 grid-cols-2 text-xs md:flex justify-between gap-5 md:text-sm  text-white mb-5 sm:mb-0">
+         <div class="language hidden py-2 max-sm:flex place-content-center gap-1">
+            <img src="../logo and icons/asosiy/language.svg" alt="">
+            <select class="uppercase bg-transparent text-center border-none">
+               <option class="text-black">uz</option>
+               <option class="text-black">ru</option>
+            </select>
+         </div>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Asosiy</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Yangiliklar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Baholash metodikalari</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Reyting</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">
+               Ishtirokchilar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Normativ-huquqiy hujjatlar</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">Aloqa</a>
+         </li>
+         <li class="py-2 grid place-content-center">
+            <a href="#">FAQ</a>
+         </li>
+
+      </ul>
+   </nav>
+   <!-- hidden navbar end -->
+
+
+
+   <!-- ishtirokchilar -->
+   <section class="ishtirokchilar px-4 w-full flex justify-center bg-[#F1F3F9]">
+      <div class="container py-6 sm:py-8 lg:py-16 flex flex-col justify-between gap-7">
+         <h1 class="text-xl md:text-3xl font-bold uppercase">Baholash metodikalari</h1>
+         <div class="w-full sm:w-[80%] gap-14">
+            <div class="max-sm:col-span-1 col-span-2 flex flex-col gap-8">
+               <p class="text-xs lg:text-lg w-full text-gray-600">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum.
+                  Why do we use it?
+                  It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like
+                  readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                  default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                  Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                  humour and the like).
+               </p>
+
+               <p class="text-xs lg:text-lg w-full text-gray-600">
+                  Where does it come from?
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                  classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                  professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                  literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
+                  "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book
+                  is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
+                  Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+               </p>
+
+               <p class="text-xs lg:text-lg w-full text-gray-600">Where does it come from?
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                  classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                  professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                  literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
+                  "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book
+                  is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
+                  Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            </div>
+
+         </div>
+
+         <div class="overflow-x-auto">
+            <div class="table w-full">
+               <table class="w-full bg-white border-collapse">
+                  <thead>
+                     <tr class="font-normal text-gray-600 text-xs w-full h-full">
+                        <th class="border-2 p-1 md:p-3 w-5 rounded-md">№</th>
+                        <th class="border-2 p-1 md:p-3 text-start min-w-[200px]">Nomi</th>
+                        <th class="border-2 border-x-0 p-1 md:p-3 text-start min-w-[180px] max-sm:text-[10px]">Lorem
+                           Ipsum is simply dummy text of</th>
+                        <th class="border-2 border-x-0 p-1 md:p-3 text-start min-w-[180px] max-sm:text-[10px]">Lorem
+                           Ipsum is simply dummy text of</th>
+                        <th class="border-2 border-x-0 p-1 md:p-3 text-start min-w-[180px] max-sm:text-[10px]">Lorem
+                           Ipsum is simply dummy text of</th>
+                        <th class="border-2 border-x-0 p-1 md:p-3 text-start min-w-[180px] max-sm:text-[10px]">Lorem
+                           Ipsum is simply dummy text of</th>
+                        <th class="border-2 border-x-0 p-1 md:p-3 text-start min-w-[180px] max-sm:text-[10px]">Lorem
+                           Ipsum is simply dummy text of</th>
+
+                     </tr>
+                  </thead>
+                  <tbody class="tbody text-xs md:text-base text-gray-600 font-medium">
+                     <tr>
+                        <td class="border-2">
+                           <div class="flex items-center justify-center">
+                              1
+                           </div>
+                        </td>
+                        <td class="p-2 md:py-3 border-2 border-x-0">
+                           <div class="flex items-center gap-5">
+                              <p>Lorem ipsum</p>
+                           </div>
+                        </td>
+
+                        <td class="border-2 border-x-0">
+                           <div class="px-2">
+                              6546
+                           </div>
+                        </td>
+                        <td class="border-2 border-x-0">
+                           <div class="px-2">
+                              6546
+                           </div>
+                        </td>
+                        <td class="border-2 border-x-0">
+                           <div class="px-2">
+                              6546
+                           </div>
+                        </td>
+                        <td class="border-2 border-x-0">
+                           <div class="px-2">
+                              6546
+                           </div>
+                        </td>
+                        <td class="border-2 border-x-0">
+                           <div class="px-2">
+                              6546
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="border-2">
+                           <div class="flex items-center justify-center">
+                              2
+                           </div>
+                        </td>
+                        <td class="p-2 md:py-3 border-2 border-x-0">
+                           <div class="flex items-center gap-5">
+                              <p>Lorem ipsum</p>
+                           </div>
+                        </td>
+
+                        <td class="border-2 border-x-0">
+                           <div class="px-2">
+                              6546
+                           </div>
+                        </td>
+                        <td class="border-2 border-x-0">
+                           <div class="px-2">
+                              6546
+                           </div>
+                        </td>
+                        <td class="border-2 border-x-0">
+                           <div class="px-2">
+                              6546
+                           </div>
+                        </td>
+                        <td class="border-2 border-x-0">
+                           <div class="px-2">
+                              6546
+                           </div>
+                        </td>
+                        <td class="border-2 border-x-0">
+                           <div class="px-2">
+                              6546
+                           </div>
+                        </td>
+                     </tr>
+
+                  </tbody>
+               </table>
+               <div class="py-4 px-5 bg-white border-2 border-t-0  rounded-b-lg">
+                  <div class="bg-blue-600 h-3 rounded-2xl w-[90%]"></div>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="w-full sm:w-[80%] gap-14">
+            <div class="max-sm:col-span-1 col-span-2 flex flex-col gap-8">
+               <p class="text-xs lg:text-lg w-full text-gray-600">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum.
+                  Why do we use it?
+                  It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like
+                  readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                  default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                  Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                  humour and the like).
+               </p>
+
+               <p class="text-xs lg:text-lg w-full text-gray-600">
+                  Where does it come from?
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                  classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                  professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                  literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
+                  "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book
+                  is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
+                  Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+               </p>
+
+               <p class="text-xs lg:text-lg w-full text-gray-600">Where does it come from?
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                  classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                  professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                  literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
+                  "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book
+                  is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
+                  Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            </div>
+         </div>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="flex flex-col items-center justify-center rounded-2xl h-[387px] bg-white w-full p-6 gap-5">
+               <div class="w-[220px] h-[220px] rounded-full overflow-hidden relative">
+                  <div
+                     class="red  bg-white h-[150px] w-[150px] flex flex-col justify-center items-center absolute rounded-full z-10 left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]">
+                     <h1 class="text-[28px] font-bold">50683</h1>
+                     <p class="text-gray-500">Jami</p>
+                  </div>
+                  <div class="blue w-[50%] h-full bg-blue-500 absolute"></div>
+                  <div class="reen right-0 bg-green-400 h-[50%]"></div>
+                  <div class="red bottom-0 bg-red-400 h-[50%]"></div>
+               </div>
+
+               <div class="flex flex-col gap-5 w-full items-center">
+                  <div class="flex gap-5">
+                     <button class="flex gap-2 items-center">
+                        <div class="w-[20px] h-[20px] rounded-full bg-blue-500"></div>
+                        <p>lorem ipsum</p>
+                     </button>
+                     <button class="flex gap-2 items-center">
+                        <div class="w-[20px] h-[20px] rounded-full bg-green-500"></div>
+                        <p>lorem ipsum</p>
+                     </button>
+                  </div>
+                  <button class="flex gap-2 items-center">
+                     <div class="w-[20px] h-[20px] rounded-full bg-red-500"></div>
+                     <p>lorem ipsum</p>
+                  </button>
+               </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center rounded-2xl h-[387px] bg-white w-full p-6 gap-5">
+               <div class="w-[220px] h-[220px] rounded-full overflow-hidden relative">
+                  <div
+                     class="red  bg-white h-[150px] w-[150px] flex flex-col justify-center items-center absolute rounded-full z-10 left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]">
+                     <h1 class="text-[28px] font-bold">50683</h1>
+                     <p class="text-gray-500">Jami</p>
+                  </div>
+                  <div class="blue w-[50%] h-full bg-blue-500 absolute"></div>
+                  <div class="reen right-0 bg-green-400 h-[50%]"></div>
+                  <div class="red bottom-0 bg-red-400 h-[50%]"></div>
+               </div>
+
+               <div class="flex flex-col gap-5 w-full items-center">
+                  <div class="flex gap-5">
+                     <button class="flex gap-2 items-center">
+                        <div class="w-[20px] h-[20px] rounded-full bg-blue-500"></div>
+                        <p>lorem ipsum</p>
+                     </button>
+                     <button class="flex gap-2 items-center">
+                        <div class="w-[20px] h-[20px] rounded-full bg-green-500"></div>
+                        <p>lorem ipsum</p>
+                     </button>
+                  </div>
+                  <button class="flex gap-2 items-center">
+                     <div class="w-[20px] h-[20px] rounded-full bg-red-500"></div>
+                     <p>lorem ipsum</p>
+                  </button>
+               </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center rounded-2xl h-[387px] bg-white w-full p-6 gap-5">
+               <div class="w-[220px] h-[220px] rounded-full overflow-hidden relative">
+                  <div
+                     class="red  bg-white h-[150px] w-[150px] flex flex-col justify-center items-center absolute rounded-full z-10 left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]">
+                     <h1 class="text-[28px] font-bold">50683</h1>
+                     <p class="text-gray-500">Jami</p>
+                  </div>
+                  <div class="blue w-[50%] h-full bg-blue-500 absolute"></div>
+                  <div class="reen right-0 bg-green-400 h-[50%]"></div>
+                  <div class="red bottom-0 bg-red-400 h-[50%]"></div>
+               </div>
+
+               <div class="flex flex-col gap-5 w-full items-center">
+                  <div class="flex gap-5">
+                     <button class="flex gap-2 items-center">
+                        <div class="w-[20px] h-[20px] rounded-full bg-blue-500"></div>
+                        <p>lorem ipsum</p>
+                     </button>
+                     <button class="flex gap-2 items-center">
+                        <div class="w-[20px] h-[20px] rounded-full bg-green-500"></div>
+                        <p>lorem ipsum</p>
+                     </button>
+                  </div>
+                  <button class="flex gap-2 items-center">
+                     <div class="w-[20px] h-[20px] rounded-full bg-red-500"></div>
+                     <p>lorem ipsum</p>
+                  </button>
+               </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center rounded-2xl h-[387px] bg-white w-full p-6 gap-5">
+               <div class="w-[220px] h-[220px] rounded-full overflow-hidden relative">
+                  <div
+                     class="red  bg-white h-[150px] w-[150px] flex flex-col justify-center items-center absolute rounded-full z-10 left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]">
+                     <h1 class="text-[28px] font-bold">50683</h1>
+                     <p class="text-gray-500">Jami</p>
+                  </div>
+                  <div class="blue w-[50%] h-full bg-blue-500 absolute"></div>
+                  <div class="reen right-0 bg-green-400 h-[50%]"></div>
+                  <div class="red bottom-0 bg-red-400 h-[50%]"></div>
+               </div>
+
+               <div class="flex flex-col gap-5 w-full items-center">
+                  <div class="flex gap-5">
+                     <button class="flex gap-2 items-center">
+                        <div class="w-[20px] h-[20px] rounded-full bg-blue-500"></div>
+                        <p>lorem ipsum</p>
+                     </button>
+                     <button class="flex gap-2 items-center">
+                        <div class="w-[20px] h-[20px] rounded-full bg-green-500"></div>
+                        <p>lorem ipsum</p>
+                     </button>
+                  </div>
+                  <button class="flex gap-2 items-center">
+                     <div class="w-[20px] h-[20px] rounded-full bg-red-500"></div>
+                     <p>lorem ipsum</p>
+                  </button>
+               </div>
+            </div>
+
+            <div class="flex bg-white md:col-span-2 rounded-2xl overflow-hidden min-h-[250px]">
+               <div class="flex flex-col w-[50%] h-full p-6 justify-between  border-e-4">
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+               </div>
+               <div class="flex flex-col w-[50%] h-full p-6 justify-between">
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+                  <div class="flex justify-between text-lg">
+                     <p class="text-gray-500 max-sm:text-xs">Lorem ipsum</p>
+                     <p class="max-sm:text-xs">3549</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      </div>
+   </section>
+   <!-- ishtirokchilar end -->
+
+
+
+   <!-- footer -->
+   <div class="footer px-4 flex items-center bg-[#211F4A] flex-col ">
+      <footer class="flex justify-between items-center text-[14px] text-[white] h-[76px] container mt-3">
+         <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]"
+            src="../logo and icons/header and footer/logo.svg" alt="">
+         <nav class="navbar hidden xl:block">
+            <ul class="navbar-menu md:flex gap-5 ">
+               <li>
+                  <a href="#" class="border-b-2 pb-1">Asosiy</a>
+               </li>
+               <li>
+                  <a href="#">Yangiliklar</a>
+               </li>
+               <li>
+                  <a href="#">Baholash metodikalari</a>
+               </li>
+               <li>
+                  <a href="#">Reyting</a>
+               </li>
+               <li>
+                  <a href="#">
+                     Ishtirokchilar</a>
+               </li>
+               <li>
+                  <a href="#">Normativ-huquqiy hujjatlar</a>
+               </li>
+               <li>
+                  <a href="#">Aloqa</a>
+               </li>
+               <li>
+                  <a href="#">FAQ</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="flex gap-4">
+            <img src="../logo and icons/header and footer/Youtube.svg" alt="">
+            <img src="../logo and icons/header and footer/Telegram.svg" alt="">
+            <img src="../logo and icons/header and footer/Facebook.svg" alt="">
+            <img src="../logo and icons/header and footer/Instagram.svg" alt="">
+         </div>
+      </footer>
+      <div class="footer-bottom grid grid-cols-1 sm:grid-cols-2 text-gray-500 justify-center  mb-5 sm:gap-5">
+         <p class="text-center"><a href="#">www.loremipsum.uz</a></p>
+         <p>Barcha huquqlar himoyalangan</p>
+      </div>
+   </div>
+   <!-- footer end -->
+
+   <script src="../index.js"></script>
+</body>
+
+</html>
