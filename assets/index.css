@@ -2,7 +2,7 @@ body::-webkit-scrollbar{
    width: 0;
 }
 
-.slider::-webkit-scrollbar{
+::-webkit-scrollbar{
    display: none;
 }
 

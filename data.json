@@ -3,55 +3,55 @@
          "name": "Akfa universiteti",
          "hudud": "Toshkent shahri",
          "ball": "6300",
-         "img": "../logo and icons/ishtirokchilar reytingi/Akfa universiteti.svg"
+         "img": "./assets/icons/participantsRating/Akfa universiteti.svg"
       },
       {
          "name": "Farg’ona davlat universiteti",
          "hudud": "Farg’ona shahri",
          "ball": "6423",
-         "img": "../logo and icons/ishtirokchilar reytingi/Farg’ona davlat universiteti.svg"
+         "img": "./assets/icons/participantsRating/Farg’ona davlat universiteti.svg"
       },
       {
          "name": "Andijon davlat universiteti",
          "hudud": "Andijon shahri",
          "ball": "4587",
-         "img": "../logo and icons/ishtirokchilar reytingi/Andijon davlat universiteti.svg"
+         "img": "./assets/icons/participantsRating/Andijon davlat universiteti.svg"
       },
       {
          "name": "Namangan davlat universiteti",
          "hudud": "Namangan shahri",
          "ball": "5406",
-         "img": "../logo and icons/ishtirokchilar reytingi/Namangan davlat universiteti.svg"
+         "img": "./assets/icons/participantsRating/Namangan davlat universiteti.svg"
       },
       {
          "name": "Islom karimov nomidagi Toshkent davlat texnika universiteti",
          "hudud": "Toshkent shahri",
          "ball": "2155",
-         "img": "../logo and icons/ishtirokchilar reytingi/Islom karimov nomidagi universiteti.svg"
+         "img": "./assets/icons/participantsRating/Islom karimov nomidagi universiteti.svg"
       },
       {
          "name": "Toshkent tibbiyot universiteti Urganch filiali",
          "hudud": "Urganch shahri",
          "ball": "4509",
-         "img": "../logo and icons/ishtirokchilar reytingi/Toshkent tibbiyot universiteti Urganch filiali.svg"
+         "img": "./assets/icons/participantsRating/Toshkent tibbiyot universiteti Urganch filiali.svg"
       },
       {
          "name": "Muhammad Al Xorazmiy nomidagi Toshkent axborot texnogoliyalari Universiteti",
          "hudud": "Toshkent shahri",
          "ball": "1200",
-         "img": "../logo and icons/ishtirokchilar reytingi/Toshkent axborot texnogoliyalari Universiteti.svg"
+         "img": "./assets/icons/participantsRating/Toshkent axborot texnogoliyalari Universiteti.svg"
       },
       {
          "name": "Qo'qon davlat pedagogika instituti",
          "hudud": "Qo’qon shahri",
          "ball": "3251",
-         "img": "../logo and icons/ishtirokchilar reytingi/Qo'qon davlat pedagogika instituti.svg"
+         "img": "./assets/icons/participantsRating/Qo'qon davlat pedagogika instituti.svg"
       },
       {
          "name": "Farg'ona politexnika instituti",
          "hudud": "Farg’ona shahri",
          "ball": "2592",
-         "img": "../logo and icons/ishtirokchilar reytingi/Farg'ona politexnika instituti.svg"
+         "img": "./assets/icons/participantsRating/Farg'ona politexnika instituti.svg"
       }
    ]
 }
