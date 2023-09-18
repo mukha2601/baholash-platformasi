@@ -5,79 +5,82 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="../index.css">
+   <link rel="stylesheet" href="./assets/index.css">
    <script src="https://cdn.tailwindcss.com"></script>
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
    <!-- option bar -->
    <div
       class="option-bar hidden z-20 justify-between rounded-l-lg py-3 option-bar fixed w-[56px] h-[206px] bg-white right-0 top-[50%] translate-y-[-50%] md:flex flex-col  items-center">
       <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
-         <img src="../logo and icons/mini optinal panel/dark_mode_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+         <img src="./assets/icons/miniOptinalPanel/dark_mode_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
       </button>
       <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
-         <img src="../logo and icons/mini optinal panel/volume_up_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+         <img src="./assets/icons/miniOptinalPanel/volume_up_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
       </button>
       <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
-         <img src="../logo and icons/mini optinal panel/text_fields_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+         <img src="./assets/icons/miniOptinalPanel/text_fields_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
       </button>
       <button class="w-8 h-8 bg-gray-200 rounded-lg flex justify-center items-center hover:bg-black">
-         <img src="../logo and icons/mini optinal panel/invert_colors_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
+         <img src="./assets/icons/miniOptinalPanel/invert_colors_FILL1_wght300_GRAD0_opsz24 1.svg" alt="">
       </button>
    </div>
 
    <!-- header -->
-   <div class="px-4 header flex justify-center bg-[#211F4A] sticky top-0 z-50">
-      <header class="flex justify-between items-center text-[14px] text-[white] h-[76px] container ">
-         <a href="../asosiy/asosiy.html">
-            <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]"
-               src="../logo and icons/header and footer/logo.svg" alt="">
+   <div class="header px-4 flex justify-center bg-[#211F4A] sticky top-0 z-50">
+      <header class="flex justify-between items-center text-[14px] text-[white] h-[76px] container">
+         <a href="./index.html">
+            <img
+               class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px] animate__animated animate__fadeInLeft animate__faster"
+               src="./assets/icons/header-footer/logo.svg" alt="">
          </a>
-         <nav class="navbar hidden xl:block">
+         <nav class="navbar hidden xl:block animate__animated animate__zoomIn animate__faster">
             <ul class="navbar-menu md:flex gap-5 ">
                <li>
-                  <a href="../asosiy/asosiy.html" class="border-b-2 pb-1">Asosiy</a>
+                  <a href="./index.html">Asosiy</a>
                </li>
                <li>
-                  <a href="#">Yangiliklar</a>
+                  <a href="./news.html">Yangiliklar</a>
                </li>
                <li>
-                  <a href="#">Baholash metodikalari</a>
+                  <a href="./method.html">Baholash metodikalari</a>
                </li>
                <li>
-                  <a href="#">Reyting</a>
+                  <a href="./participantsRating.html">Reyting</a>
                </li>
                <li>
-                  <a href="#">
-                     Ishtirokchilar</a>
+                  <a href="#" class="bottom">Ishtirokchilar</a>
                </li>
                <li>
-                  <a href="#">Normativ-huquqiy hujjatlar</a>
+                  <a href="./legalDocuments.html">Normativ-huquqiy hujjatlar</a>
                </li>
                <li>
-                  <a href="#">Aloqa</a>
+                  <a href="./communication.html">Aloqa</a>
                </li>
                <li>
                   <a href="#">FAQ</a>
                </li>
             </ul>
          </nav>
-         <div class="flex gap-4">
-            <div class="language  max-sm:hidden flex gap-1">
-               <img src="../logo and icons/asosiy/language.svg" alt="">
+         <div class="flex gap-4 animate__animated animate__fadeInRight animate__faster">
+            <div class="language max-sm:hidden flex gap-1">
+               <img src="./assets/icons/header-footer/language.svg" alt="">
                <select class="uppercase bg-transparent text-center border-none outline-none">
-                  <option class="text-black ">uz</option>
+                  <option class="text-black">uz</option>
                   <option class="text-black">ru</option>
                </select>
             </div>
-            <button
-               class="text-xs md:text-sm rounded-lg bg-[#2861F5] hover:bg-white hover:text-blue-800 py-2 px-4 color hover:shadow-lg hover:shadow-blue-300">Tizimga
-               kirish
-            </button>
+            <a href="./login.html">
+               <button
+                  class="text-xs md:text-sm rounded-lg bg-[#2861F5] hover:bg-white hover:text-blue-800 py-2 px-4 color hover:shadow-lg hover:shadow-blue-300">Tizimga
+                  kirish
+               </button>
+            </a>
             <button class="btnBurger block xl:hidden border-[#2861F5] border-2 rounded-lg px-2">
-               <img class="w-[25px]" src="../logo and icons/ishtirokchilar/bar.svg" alt="">
+               <img class="w-[25px]" src="./assets/icons/header-footer/bar.svg" alt="">
             </button>
          </div>
       </header>
@@ -85,37 +88,37 @@
    <!-- header end -->
 
    <!-- hidden navbar -->
-   <nav class="hiddenNav hidden px-3 flex justify-center py-2 fixed bg-[#2861F5] w-full z-30">
+   <nav class="hiddenNav hidden px-3 justify-center py-2 fixed bg-[#2861F5] w-full z-30">
       <ul
          class="navbar-menu container grid max-sm:grid-cols-1 grid-cols-2 text-xs md:flex justify-between gap-5 md:text-sm  text-white mb-5 sm:mb-0">
          <div class="language hidden py-2 max-sm:flex place-content-center gap-1">
-            <img src="../logo and icons/asosiy/language.svg" alt="">
+            <img src="./assets/icons/header-footer/language.svg" alt="">
             <select class="uppercase bg-transparent text-center border-none">
                <option class="text-black">uz</option>
                <option class="text-black">ru</option>
             </select>
          </div>
          <li class="py-2 grid place-content-center">
-            <a href="../asosiy/asosiy.html">Asosiy</a>
+            <a href="./index.html">Asosiy</a>
          </li>
          <li class="py-2 grid place-content-center">
-            <a href="#">Yangiliklar</a>
+            <a href="./news.html">Yangiliklar</a>
          </li>
          <li class="py-2 grid place-content-center">
-            <a href="#">Baholash metodikalari</a>
+            <a href="./method.html">Baholash metodikalari</a>
          </li>
          <li class="py-2 grid place-content-center">
-            <a href="#">Reyting</a>
+            <a href="./participantsRating.html">Reyting</a>
          </li>
          <li class="py-2 grid place-content-center">
             <a href="#">
                Ishtirokchilar</a>
          </li>
          <li class="py-2 grid place-content-center">
-            <a href="#">Normativ-huquqiy hujjatlar</a>
+            <a href="./legalDocuments.html">Normativ-huquqiy hujjatlar</a>
          </li>
          <li class="py-2 grid place-content-center">
-            <a href="#">Aloqa</a>
+            <a href="./communication.html">Aloqa</a>
          </li>
          <li class="py-2 grid place-content-center">
             <a href="#">FAQ</a>
@@ -125,25 +128,24 @@
    </nav>
    <!-- hidden navbar end -->
 
-
    <section class="px-3 w-full flex justify-center bg-[#F1F3F9]">
       <div class="container py-6 sm:py-8 lg:py-16 flex flex-col items-center justify-between gap-7">
          <div class="rounded-full grid place-content-center bg-white w-[150px] h-[150px] md:w-[260px] md:h-[260px]">
-            <img class="w-[50px] md:w-[100px]" src="../logo and icons/ishtirokchilar/akfa logo.svg" alt="">
+            <img class="w-[50px] md:w-[100px]" src="./assets/icons/participants/akfa logo.svg" alt="">
          </div>
          <h1 class="text-xl md:text-3xl font-bold uppercase">Farg’ona davlat universiteti</h1>
          <div class="flex max-[660px]:flex-col w-full gap-5 justify-center">
             <div class="flex bg-white p-2 rounded-xl gap-2">
-               <img src="../logo and icons/ishtirokchilar/language.svg" alt="">
+               <img src="./assets/icons/participants/language.svg" alt="">
                <a href="">www.fdu.uz</a>
-               <img src="../logo and icons/ishtirokchilar/call_made.svg" alt="">
+               <img src="./assets/icons/participants/call_made.svg" alt="">
             </div>
             <div class="flex bg-white p-2 rounded-xl gap-2">
-               <img src="../logo and icons/ishtirokchilar/call.svg" alt="">
+               <img src="./assets/icons/participants/call.svg" alt="">
                <p>+998 97 628 28 82</p>
             </div>
             <div class="flex bg-white p-2 rounded-xl gap-2">
-               <img src="../logo and icons/ishtirokchilar/location.svg" alt="">
+               <img src="./assets/icons/participants/location.svg" alt="">
                <p>Farg’ona shaxar, mustaqillik 3</p>
             </div>
          </div>
@@ -321,31 +323,32 @@
    <!-- footer -->
    <div class="footer px-4 flex items-center bg-[#211F4A] flex-col ">
       <footer class="flex justify-between items-center text-[14px] text-[white] h-[76px] container mt-3">
-         <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]"
-            src="../logo and icons/header and footer/logo.svg" alt="">
-         <nav class="navbar hidden xl:block">
+         <a href="./index.html">
+            <img class="w-[120px]  lg:w-[150px] xl:w-[180px] 2xl-[200px]" src="./assets/icons/header-footer/logo.svg"
+               alt="">
+         </a>
+         <nav class="navbar hidden xl:block animate__animated animate__zoomIn animate__faster">
             <ul class="navbar-menu md:flex gap-5 ">
                <li>
-                  <a href="#" class="border-b-2 pb-1">Asosiy</a>
+                  <a href="./index.html">Asosiy</a>
                </li>
                <li>
-                  <a href="#">Yangiliklar</a>
+                  <a href="./news.html">Yangiliklar</a>
                </li>
                <li>
-                  <a href="#">Baholash metodikalari</a>
+                  <a href="./method.html">Baholash metodikalari</a>
                </li>
                <li>
-                  <a href="#">Reyting</a>
+                  <a href="./participantsRating.html">Reyting</a>
                </li>
                <li>
-                  <a href="#">
-                     Ishtirokchilar</a>
+                  <a href="#">Ishtirokchilar</a>
                </li>
                <li>
-                  <a href="#">Normativ-huquqiy hujjatlar</a>
+                  <a href="./legalDocuments.html">Normativ-huquqiy hujjatlar</a>
                </li>
                <li>
-                  <a href="#">Aloqa</a>
+                  <a href="./communication.html">Aloqa</a>
                </li>
                <li>
                   <a href="#">FAQ</a>
@@ -353,10 +356,10 @@
             </ul>
          </nav>
          <div class="flex gap-4">
-            <img src="../logo and icons/header and footer/Youtube.svg" alt="">
-            <img src="../logo and icons/header and footer/Telegram.svg" alt="">
-            <img src="../logo and icons/header and footer/Facebook.svg" alt="">
-            <img src="../logo and icons/header and footer/Instagram.svg" alt="">
+            <img src="./assets/icons/header-footer/Youtube.svg" alt="">
+            <img src="./assets/icons/header-footer/Telegram.svg" alt="">
+            <img src="./assets/icons/header-footer/Facebook.svg" alt="">
+            <img src="./assets/icons/header-footer/Instagram.svg" alt="">
          </div>
       </footer>
       <div class="footer-bottom grid grid-cols-1 sm:grid-cols-2 text-gray-500 justify-center  mb-5 sm:gap-5">
@@ -366,7 +369,6 @@
    </div>
    <!-- footer end -->
 
-   <script src="../index.js"></script>
 </body>
 
 </html>
