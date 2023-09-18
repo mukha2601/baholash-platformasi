@@ -1,12 +1,18 @@
 const btnBurger = document.querySelector('.btnBurger')
 const hiddenNav = document.querySelector('.hiddenNav')
 const body = document.querySelector('body')
+const navbar = document.querySelector('.navbar')
 
 btnBurger.addEventListener('click', () => {
    hiddenNav.classList.toggle('hidden')
    hiddenNav.classList.toggle('flex')
    body.classList.toggle('max-md:overflow-hidden')
 })
+
+navbar.addEventListener('click', (e) => {
+   console.log(e.target);
+})
+
 
 
 // ----------------------- MAIN -----------------------------------------
@@ -29,7 +35,7 @@ function dataApi() {
       .then((data) => {
          getArr(data.data);
       })
-      .catch(() => alert("Xatolik yuz berdi!"));
+      // .catch(() => alert("Xatolik yuz berdi!"));
 }
 dataApi()
 
@@ -323,6 +329,10 @@ const obj3 = [
    { img: "./assets/icons/usefulLinks/gerb.svg", text: "O’zbekiston respublikasi, prezidenti virtual qabulxonasi" },
    { img: "./assets/icons/usefulLinks/gerb.svg", text: "O’zbekiston respublikasi, prezidenti virtual qabulxonasi" }
 ]
+function nsdnf() {
+   
+}
+
 
 const usefulLinks = () => {
    sliderBox3.innerHTML = ""
@@ -345,60 +355,60 @@ usefulLinks()
 // ----------------------- PARTICIPANTS RATING ------------------------------
 
 // malumotlarni apida olib keladi
-function dataApi() {
-   fetch(api_url)
-      .then((res) => res.json())
-      .then((data) => {
-         generateAll(data.data);
-      })
-      .catch(() => alert("Ma'lumot kelishda xatolik yuz berdi!"));
-}
-dataApi()
+// function dataApi() {
+//    fetch(api_url)
+//       .then((res) => res.json())
+//       .then((data) => {
+//          generateAll(data.data);
+//       })
+//       .catch(() => alert("Ma'lumot kelishda xatolik yuz berdi!"));
+// }
+// dataApi()
 
 
 // apidan kelgan malumotlarni htmlga generatsiya qiladi
-function generateAlll(res) {
-   tbody.innerHTML = ""
+// function generateAlll(res) {
+//    tbody.innerHTML = ""
 
-   res.map((item) => {
-      const tableBody = document.createElement('tr')
+//    res.map((item) => {
+//       const tableBody = document.createElement('tr')
 
 
-      tableBody.innerHTML = `
-      <td class="border-2 border-x-0 border-black">
-         <div class="flex items-center justify-center">
-            ${n++}
-         </div>
-      </td>
-      <td class="border-2 border-x-0 border-black px-8 py-1 md:py-3">
-         <div class="flex items-center gap-5">
-            <div
-               class="flex min-w-[70px] md:min-w-[123px] min-h-[60px] md:min-h-[102px] justify-center items-center bg-white border-solid border-2 border-gray-200 rounded-lg">
-               <img src="${item.img}"
-                  class="w-[50px] md:w-[80px]" alt="">
-            </div>
-            <p class="md:w-56">${item.name}</p>
-         </div>
-      </td>
+//       tableBody.innerHTML = `
+//       <td class="border-2 border-x-0 border-black">
+//          <div class="flex items-center justify-center">
+//             ${n++}
+//          </div>
+//       </td>
+//       <td class="border-2 border-x-0 border-black px-8 py-1 md:py-3">
+//          <div class="flex items-center gap-5">
+//             <div
+//                class="flex min-w-[70px] md:min-w-[123px] min-h-[60px] md:min-h-[102px] justify-center items-center bg-white border-solid border-2 border-gray-200 rounded-lg">
+//                <img src="${item.img}"
+//                   class="w-[50px] md:w-[80px]" alt="">
+//             </div>
+//             <p class="md:w-56">${item.name}</p>
+//          </div>
+//       </td>
       
-      <td class="border-2 border-x-0  border-black">
-         <div class="flex justify-center">
-            <p
-               class="ball w-[51px] h-[28px] bg-gray-100 flex justify-center items-center rounded-lg font-medium">
-               ${item.ball}
-            </p>
-         </div>
-      </td>
-      <td class="border-2 border-s-0 border-black">
-      <div class="w-full h-full flex justify-center items-center px-3">
-         <button
-            class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-      </div>
-      </td>
-      `
-      tbody.appendChild(tableBody);
-   })
-}
+//       <td class="border-2 border-x-0  border-black">
+//          <div class="flex justify-center">
+//             <p
+//                class="ball w-[51px] h-[28px] bg-gray-100 flex justify-center items-center rounded-lg font-medium">
+//                ${item.ball}
+//             </p>
+//          </div>
+//       </td>
+//       <td class="border-2 border-s-0 border-black">
+//       <div class="w-full h-full flex justify-center items-center px-3">
+//          <button
+//             class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
+//       </div>
+//       </td>
+//       `
+//       tbody.appendChild(tableBody);
+//    })
+// }
 // ----------------------- PARTICIPANTS RATING END -------------------------------
 
 

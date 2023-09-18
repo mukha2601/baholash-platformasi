@@ -16,3 +16,8 @@ body::-webkit-scrollbar{
 .green{
    background-color: rgb(213, 240, 213);
 }
+
+.bottom{
+   padding-bottom: .5rem;
+   border-bottom: 3px solid white;
+}
