@@ -1,335 +1,112 @@
 const regionsElem = document.querySelector(".activeRegion");
 
-
 const renderR2 = () => {
   
-  regionsElem.innerHTML = `
-  <div class="">
-                     <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
-                       <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
-                          <div class="p-1 rounded-lg bg-white">
-                             <img class="w-[50px]" src="../logo and icons/ishtirokchilar reytingi/Andijon davlat universiteti.svg" alt="">
-                          </div>
-                        <p class="text-gray-600 w-[80%]">Andijon davlat universiteti</p>
-                        <img class="w-[15px] absolute right-0" src="../logo and icons/muassasalar/down.svg" alt="">
-                       </summary>
-                       <div class="mt-3 text-sm flex flex-col gap-2">
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/location.svg" alt="">
-                           <p>Andijon</p>
-                        </div>
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/call.svg" alt="">
-                           <p>+998 97 628 28 82</p>
-                        </div>
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/mail.svg" alt="">
-                           <p>Faksa.the@gmail.com</p>
-                        </div>
-                       </div>
-                     </details>
-                  </div>
+  function data() {
+    fetch("../data.json")
+      .then((res) => res.json())
+      .then((data) => {
+        render(data.data);
+      })
+    // .catch(() => alert("Ma'lumot kelishda xatolik yuz berdi!"));
+  }
+  data()
 
-                  <div class="">
-                     <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
-                       <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
-                          <div class="p-1 rounded-lg bg-white">
-                             <img class="w-[50px]" src="../logo and icons/ishtirokchilar reytingi/Akfa universiteti.svg" alt="">
-                          </div>
-                        <p class="text-gray-600 w-[80%]">Akfa universiteti</p>
-                        <img class="w-[15px] absolute right-0" src="../logo and icons/muassasalar/down.svg" alt="">
-                       </summary>
-                       <div class="mt-3 text-sm flex flex-col gap-2">
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/location.svg" alt="">
-                           <p>Andijon</p>
-                        </div>
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/call.svg" alt="">
-                           <p>+998 97 628 28 82</p>
-                        </div>
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/mail.svg" alt="">
-                           <p>Faksa.the@gmail.com</p>
-                        </div>
-                       </div>
-                     </details>
-                  </div>
+  const render = (res) => {
+    console.log(res);
 
-                  <div class="">
-                     <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
-                       <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
-                          <div class="p-1 rounded-lg bg-white">
-                             <img class="w-[50px]" src="../logo and icons/ishtirokchilar reytingi/Farg'ona politexnika instituti.svg" alt="">
-                          </div>
-                        <p class="text-gray-600 w-[80%]">Farg'ona politexnika instituti</p>
-                        <img class="w-[15px] absolute right-0" src="../logo and icons/muassasalar/down.svg" alt="">
-                       </summary>
-                       <div class="mt-3 text-sm flex flex-col gap-2">
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/location.svg" alt="">
-                           <p>Andijon</p>
-                        </div>
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/call.svg" alt="">
-                           <p>+998 97 628 28 82</p>
-                        </div>
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/mail.svg" alt="">
-                           <p>Faksa.the@gmail.com</p>
-                        </div>
-                       </div>
-                     </details>
-                  </div>
-                  <div class="">
-                     <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
-                       <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
-                          <div class="p-1 rounded-lg bg-white">
-                             <img class="w-[50px]" src="../logo and icons/ishtirokchilar reytingi/Islom karimov nomidagi universiteti.svg" alt="">
-                          </div>
-                        <p class="text-gray-600 w-[80%]">Islom karimov nomidagi universiteti</p>
-                        <img class="w-[15px] absolute right-0" src="../logo and icons/muassasalar/down.svg" alt="">
-                       </summary>
-                       <div class="mt-3 text-sm flex flex-col gap-2">
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/location.svg" alt="">
-                           <p>Andijon</p>
-                        </div>
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/call.svg" alt="">
-                           <p>+998 97 628 28 82</p>
-                        </div>
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/mail.svg" alt="">
-                           <p>Faksa.the@gmail.com</p>
-                        </div>
-                       </div>
-                     </details>
-                  </div>
 
-                  <div class="">
-                     <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
-                       <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
-                          <div class="p-1 rounded-lg bg-white">
-                             <img class="w-[50px]" src="../logo and icons/ishtirokchilar reytingi/Toshkent axborot texnogoliyalari Universiteti.svg" alt="">
-                          </div>
-                        <p class="text-gray-600 w-[80%]">Muhammad Al Xorazmiy nomidagi Toshkent axborot texnogoliyalari Universiteti</p>
-                        <img class="w-[15px] absolute right-0" src="../logo and icons/muassasalar/down.svg" alt="">
-                       </summary>
-                       <div class="mt-3 text-sm flex flex-col gap-2">
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/location.svg" alt="">
-                           <p>Andijon</p>
-                        </div>
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/call.svg" alt="">
-                           <p>+998 97 628 28 82</p>
-                        </div>
-                        <div class="flex gap-5">
-                           <img src="../logo and icons/muassasalar/mail.svg" alt="">
-                           <p>Faksa.the@gmail.com</p>
-                        </div>
-                       </div>
-                     </details>
-                  </div>
-  `;
-  
+
+    res.map((item) => {
+      regionsElem.innerHTML = `
+    <div class="">
+    <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
+      <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
+         <div class="p-1 rounded-lg bg-white">
+            <img class="w-[50px]" src="${item.img}" alt="">
+         </div>
+       <p class="text-gray-600 w-[80%]">${item.name}</p>
+       <img class="w-[15px] absolute right-0" src="./assets/icons/participantsRating/down.svg" alt="">
+      </summary>
+      <div class="mt-3 text-sm flex flex-col gap-2">
+       <div class="flex gap-5">
+          <img src="./assets/icons/participantsRating/location.svg" alt="">
+          <p>${item.hudud}</p>
+       </div>
+       <div class="flex gap-5">
+          <img src="./assets/icons/participantsRating/call.svg" alt="">
+          <p>+998 97 628 28 82</p>
+       </div>
+       <div class="flex gap-5">
+          <img src="./assets/icons/participantsRating/mail.svg" alt="">
+          <p>Faksa.the@gmail.com</p>
+       </div>
+      </div>
+    </details>
+  </div>
+    `;
+    })
+
+  }
 }
-const renderR3 = () => {
-  
-  regionsElem.innerHTML = `
 
-  <div class="">
-  <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
-    <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
-       <div class="p-1 rounded-lg bg-white">
-          <img class="w-[50px]" src="../logo and icons/ishtirokchilar reytingi/Akfa universiteti.svg" alt="">
-       </div>
-     <p class="text-gray-600 w-[80%]">Akfa universiteti</p>
-     <img class="w-[15px] absolute right-0" src="../logo and icons/muassasalar/down.svg" alt="">
-    </summary>
-    <div class="mt-3 text-sm flex flex-col gap-2">
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/location.svg" alt="">
-        <p>Andijon</p>
-     </div>
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/call.svg" alt="">
-        <p>+998 97 628 28 82</p>
-     </div>
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/mail.svg" alt="">
-        <p>Faksa.the@gmail.com</p>
-     </div>
-    </div>
-  </details>
-</div>
-
-  <div class="">
-  <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
-    <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
-       <div class="p-1 rounded-lg bg-white">
-          <img class="w-[50px]" src="../logo and icons/ishtirokchilar reytingi/Andijon davlat universiteti.svg" alt="">
-       </div>
-     <p class="text-gray-600 w-[80%]">Andijon davlat universiteti</p>
-     <img class="w-[15px] absolute right-0" src="../logo and icons/muassasalar/down.svg" alt="">
-    </summary>
-    <div class="mt-3 text-sm flex flex-col gap-2">
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/location.svg" alt="">
-        <p>Andijon</p>
-     </div>
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/call.svg" alt="">
-        <p>+998 97 628 28 82</p>
-     </div>
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/mail.svg" alt="">
-        <p>Faksa.the@gmail.com</p>
-     </div>
-    </div>
-  </details>
-</div>
-
-<div class="">
-  <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
-    <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
-       <div class="p-1 rounded-lg bg-white">
-          <img class="w-[50px]" src="../logo and icons/ishtirokchilar reytingi/Toshkent axborot texnogoliyalari Universiteti.svg" alt="">
-       </div>
-     <p class="text-gray-600 w-[80%]">Muhammad Al Xorazmiy nomidagi Toshkent axborot texnogoliyalari Universiteti</p>
-     <img class="w-[15px] absolute right-0" src="../logo and icons/muassasalar/down.svg" alt="">
-    </summary>
-    <div class="mt-3 text-sm flex flex-col gap-2">
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/location.svg" alt="">
-        <p>Andijon</p>
-     </div>
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/call.svg" alt="">
-        <p>+998 97 628 28 82</p>
-     </div>
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/mail.svg" alt="">
-        <p>Faksa.the@gmail.com</p>
-     </div>
-    </div>
-  </details>
-</div>
-
-
-<div class="">
-  <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
-    <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
-       <div class="p-1 rounded-lg bg-white">
-          <img class="w-[50px]" src="../logo and icons/ishtirokchilar reytingi/Farg'ona politexnika instituti.svg" alt="">
-       </div>
-     <p class="text-gray-600 w-[80%]">Farg'ona politexnika instituti</p>
-     <img class="w-[15px] absolute right-0" src="../logo and icons/muassasalar/down.svg" alt="">
-    </summary>
-    <div class="mt-3 text-sm flex flex-col gap-2">
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/location.svg" alt="">
-        <p>Andijon</p>
-     </div>
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/call.svg" alt="">
-        <p>+998 97 628 28 82</p>
-     </div>
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/mail.svg" alt="">
-        <p>Faksa.the@gmail.com</p>
-     </div>
-    </div>
-  </details>
-</div>
-<div class="">
-  <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
-    <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
-       <div class="p-1 rounded-lg bg-white">
-          <img class="w-[50px]" src="../logo and icons/ishtirokchilar reytingi/Islom karimov nomidagi universiteti.svg" alt="">
-       </div>
-     <p class="text-gray-600 w-[80%]">Islom karimov nomidagi universiteti</p>
-     <img class="w-[15px] absolute right-0" src="../logo and icons/muassasalar/down.svg" alt="">
-    </summary>
-    <div class="mt-3 text-sm flex flex-col gap-2">
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/location.svg" alt="">
-        <p>Andijon</p>
-     </div>
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/call.svg" alt="">
-        <p>+998 97 628 28 82</p>
-     </div>
-     <div class="flex gap-5">
-        <img src="../logo and icons/muassasalar/mail.svg" alt="">
-        <p>Faksa.the@gmail.com</p>
-     </div>
-    </div>
-  </details>
-</div>
-
-
-  `;
-  
-}
 let activeRegionId;
 const regionsCode = [{
-    code: "r2",
-    renderFn: renderR2
-  },
-  {
-    code: "r1",
-    renderFn: renderR2
-  },
-  {
-    code: "r3",
-    renderFn: renderR3
-  },
-  {
-    code: "r5",
-    renderFn: renderR2
-  },
-  {
-    code: "r6",
-    renderFn: renderR2
-  },
-  {
-    code: "r11",
-    renderFn: renderR2
-  },
-  {
-    code: "r10",
-    renderFn: renderR2
-  },
-  {
-    code: "r8",
-    renderFn: renderR2
-  },
-  {
-    code: "r12",
-    renderFn: renderR2
-  },
-  {
-    code: "r4",
-    renderFn: renderR2
-  },
-  {
-    code: "r7",
-    renderFn: renderR2
-  },
-  {
-    code: "r9",
-    renderFn: renderR2
-  },
-  {
-    code: "r13",
-    renderFn: renderR2
-  },
-  {
-    code: "r14",
-    renderFn: renderR2
-  },
+  code: "r2",
+  renderFn: renderR2
+},
+{
+  code: "r1",
+  renderFn: renderR2
+},
+{
+  code: "r3",
+  renderFn: renderR2
+},
+{
+  code: "r5",
+  renderFn: renderR2
+},
+{
+  code: "r6",
+  renderFn: renderR2
+},
+{
+  code: "r11",
+  renderFn: renderR2
+},
+{
+  code: "r10",
+  renderFn: renderR2
+},
+{
+  code: "r8",
+  renderFn: renderR2
+},
+{
+  code: "r12",
+  renderFn: renderR2
+},
+{
+  code: "r4",
+  renderFn: renderR2
+},
+{
+  code: "r7",
+  renderFn: renderR2
+},
+{
+  code: "r9",
+  renderFn: renderR2
+},
+{
+  code: "r13",
+  renderFn: renderR2
+},
+{
+  code: "r14",
+  renderFn: renderR2
+},
 
 ]
 

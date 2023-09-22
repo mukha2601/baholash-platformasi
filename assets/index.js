@@ -1,41 +1,95 @@
-const btnBurger = document.querySelector('.btnBurger')
 const hiddenNav = document.querySelector('.hiddenNav')
 const body = document.querySelector('body')
-const navbar = document.querySelector('.navbar')
+const table = document.querySelector('.table')
+const tbody = document.querySelector('.tbody')
 
-btnBurger.addEventListener('click', () => {
+const api_url = '../data.json'
+
+
+
+document.querySelector('.btnBurger').onclick = function () {
    hiddenNav.classList.toggle('hidden')
    hiddenNav.classList.toggle('flex')
    body.classList.toggle('max-md:overflow-hidden')
-})
+}
 
-navbar.addEventListener('click', (e) => {
-   console.log(e.target);
-})
+
+// ----------------------- MAIN PARTICIPANTS -------------------------------
+const sliderBox1 = document.querySelector('.sliderBox1')
+
+const obj1 = [
+   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
+]
+
+const participants = () => {
+
+   obj1.map(item => {
+      const slider = document.createElement('div')
+      slider.classList.add('glide__slide')
+      slider.innerHTML = `
+      <div class="w-[200px]  md:w-[285px] ">
+         <div class="w-full h-[100px] md:h-[171px] bg-white flex items-center justify-center rounded-lg">
+            <img src="${item.src}" alt="" class="w-[100px] md:w-[150px]">
+         </div>
+         <p class="mt-2 md:mt-5 text-xs sm:text-sm md:text-lg font-semibold">${item.name}</p>
+         <div class="flex mt-1 gap-1 text-xs md:text-sm items-center">
+            <img src="./assets/icons/participantsRating/location.svg" alt="">
+            <p>${item.location}</p>
+         </div>
+      </div>
+      `
+      sliderBox1.appendChild(slider)
+   })
+}
+participants()
+// ----------------------- MAIN PARTICIPANTS END ---------------------------
+
+
+const config = {
+   type: 'carousel',
+   startAt: 0,
+   perView: 4,
+   breakpoints: {
+      400: {
+         perView: 1.5
+      },
+      500: {
+         perView: 2
+      },
+      // 640: {
+      //    perView: 2.5
+      // },
+      768: {
+         perView: 2.5
+      },
+      900: {
+         perView: 3
+      },
+      1536: {
+         perView: 3.5
+      }
+   }
+}
+new Glide('.glide', config).mount()
 
 
 
 // ----------------------- MAIN -----------------------------------------
 
-const table = document.querySelector('.table')
-const tbody = document.querySelector('.tbody')
-const api_url = './data.json'
-const all = document.querySelector('.all')
-const max = document.querySelector('.max')
-const middle = document.querySelector('.middle')
-const min = document.querySelector('.min')
-let n = 1;
-
-
-
 // malumotlarni apida olib keladi
+let n = 1;
 function dataApi() {
    fetch(api_url)
       .then((res) => res.json())
       .then((data) => {
          getArr(data.data);
       })
-      // .catch(() => alert("Xatolik yuz berdi!"));
+   // .catch(() => alert("Xatolik yuz berdi!"));
 }
 dataApi()
 
@@ -51,26 +105,43 @@ function getArr(res) {
    // console.log(mas);
    getRandom(res)
    n = 1
-   all.addEventListener('click', () => {
+   document.querySelector('.all').onclick = function () {
+      table.classList.remove('green')
+      table.classList.remove('yellow')
+      table.classList.remove('red')
       tbody.innerHTML = ""
       getRandom(res)
       n = 1
-   })
-   max.addEventListener('click', () => {
+   }
+   document.querySelector('.max').onclick = function () {
+      table.classList.remove('green')
+      table.classList.remove('yellow')
+      table.classList.remove('red')
+      table.classList.add('green')
       tbody.innerHTML = ""
       getMax(res, mas)
       n = 1
-   })
-   middle.addEventListener('click', () => {
+   }
+   document.querySelector('.middle').onclick = function () {
+      table.classList.remove('green')
+      table.classList.remove('yellow')
+      table.classList.remove('red')
+      table.classList.add('yellow')
       tbody.innerHTML = ""
       getMiddle(res, mas)
       n = 1
-   })
-   min.addEventListener('click', () => {
+   }
+
+   document.querySelector('.min').onclick = function () {
+      table.classList.remove('green')
+      table.classList.remove('yellow')
+      table.classList.remove('red')
+      table.classList.add('red')
       tbody.innerHTML = ""
       getMin(res, mas)
       n = 1
-   })
+   }
+
 }
 
 
@@ -85,7 +156,6 @@ function getMax(res, mas) {
 
    let generateMax = []
    for (let i = 0; i < res.length; i++) {
-      // console.log(res[i].ball);
       for (let j = 0; j < maxArr.length; j++) {
          if (+res[i].ball == maxArr[j]) {
             generateMax.push(res[i])
@@ -95,10 +165,6 @@ function getMax(res, mas) {
    }
    generateAll(generateMax)
 }
-
-
-
-
 
 
 function getMiddle(res, mas) {
@@ -111,7 +177,6 @@ function getMiddle(res, mas) {
 
    let generateMid = []
    for (let i = 0; i < res.length; i++) {
-      // console.log(res[i].ball);
       for (let j = 0; j < midArr.length; j++) {
          if (+res[i].ball == midArr[j]) {
             generateMid.push(res[i])
@@ -121,9 +186,6 @@ function getMiddle(res, mas) {
    }
    generateAll(generateMid)
 }
-
-
-
 
 
 function getMin(res, mas) {
@@ -146,8 +208,6 @@ function getMin(res, mas) {
    generateAll(generateMin)
 }
 
-
-
 // apidan kelgan malumotlarni random tarzda massivga joylashtiradi
 function getRandom(res) {
    let ranArr = [];
@@ -167,8 +227,6 @@ function getRandom(res) {
 }
 
 
-
-
 // apidan kelgan malumotlarni htmlga generatsiya qiladi
 function generateAll(res) {
    tbody.innerHTML = ""
@@ -178,12 +236,12 @@ function generateAll(res) {
 
 
       tableBody.innerHTML = `
-      <td class="border-2 border-black">
+      <td class="border-2 ">
          <div class="flex items-center justify-center">
             ${n++}
          </div>
       </td>
-      <td class="border-2 border-black px-8 py-1 md:py-3">
+      <td class="border-2  px-8 py-1 md:py-3">
          <div class="flex items-center gap-5">
             <div
                class="flex min-w-[70px] md:min-w-[123px] min-h-[60px] md:min-h-[102px] justify-center items-center bg-white border-solid border-2 border-gray-200 rounded-lg">
@@ -193,13 +251,13 @@ function generateAll(res) {
             <p class="md:w-56">${item.name}</p>
          </div>
       </td>
-      <td class="border-2 border-black px-5">
+      <td class="border-2  px-5">
          <div class="flex mt-1 gap-1 text-xs md:text-sm justify-center ">
-            <img src="../logo and icons/ishtirokchilar reytingi/location.svg" alt="">
+            <img src="./assets/icons/participantsRating/location.svg" alt="">
             <p>${item.hudud}</p>
          </div>
       </td>
-      <td class="border-2 border-black">
+      <td class="border-2 ">
          <div class="flex justify-center">
             <p
                class="ball w-[51px] h-[28px] bg-gray-100 flex justify-center items-center rounded-lg font-medium">
@@ -207,7 +265,7 @@ function generateAll(res) {
             </p>
          </div>
       </td>
-      <td class="border-2 border-black">
+      <td class="border-2 ">
       <div class="w-full h-full flex justify-center items-center px-3">
          <button
             class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
@@ -217,68 +275,7 @@ function generateAll(res) {
       tbody.appendChild(tableBody);
    })
 }
-
-all.addEventListener("click", () => {
-   table.classList.remove('green')
-   table.classList.remove('yellow')
-   table.classList.remove('red')
-})
-max.addEventListener("click", () => {
-   table.classList.remove('green')
-   table.classList.remove('yellow')
-   table.classList.remove('red')
-   table.classList.add('green')
-})
-middle.addEventListener("click", () => {
-   table.classList.remove('green')
-   table.classList.remove('yellow')
-   table.classList.remove('red')
-   table.classList.add('yellow')
-})
-min.addEventListener("click", () => {
-   table.classList.remove('green')
-   table.classList.remove('yellow')
-   table.classList.remove('red')
-   table.classList.add('red')
-})
-
-// ----------------------- MAIN END ----------------------------------------
-
-
-// ----------------------- MAIN PARTICIPANTS -------------------------------
-const sliderBox1 = document.querySelector('.sliderBox1')
-
-const obj1 = [
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-]
-
-const participants = () => {
-   sliderBox1.innerHTML = ""
-
-   obj1.map(item => {
-      const slider = document.createElement('div')
-      slider.innerHTML = `
-      <div class="slider-card w-[200px]  md:w-[285px] ">
-         <div class="w-full h-[100px] md:h-[171px] bg-white flex items-center justify-center rounded-lg">
-            <img src="${item.src}" alt="" class="w-[100px] md:w-[150px]">
-         </div>
-         <p class="mt-2 md:mt-5 text-xs sm:text-sm md:text-lg font-semibold">${item.name}</p>
-         <div class="flex mt-1 gap-1 text-xs md:text-sm items-center">
-            <img src="./assets/icons/participantsRating/location.svg" alt="">
-            <p>${item.location}</p>
-         </div>
-      </div>
-      `
-      sliderBox1.appendChild(slider)
-   })
-}
-participants()
-// ----------------------- MAIN PARTICIPANTS END ---------------------------
+// ----------------------- MAIN END -------------------------------------------
 
 
 
@@ -318,7 +315,7 @@ mainLegalDocuments()
 
 
 
-// ----------------------- USEFUL LINKS DOCUMENTS -------------------------------
+// ----------------------- MAIN USEFUL LINKS DOCUMENTS -------------------------------
 const sliderBox3 = document.querySelector('.sliderBox3')
 
 const obj3 = [
@@ -330,7 +327,7 @@ const obj3 = [
    { img: "./assets/icons/usefulLinks/gerb.svg", text: "O’zbekiston respublikasi, prezidenti virtual qabulxonasi" }
 ]
 function nsdnf() {
-   
+
 }
 
 
@@ -349,83 +346,90 @@ const usefulLinks = () => {
    })
 }
 usefulLinks()
-// ----------------------- MAIN LEGAL DOCUMENTS END ---------------------------
+// ----------------------- MAIN USEFUL LINKS END ---------------------------
+
+
 
 
 // ----------------------- PARTICIPANTS RATING ------------------------------
 
+const tbody2 = document.querySelector('.tbody2')
+
 // malumotlarni apida olib keladi
-// function dataApi() {
-//    fetch(api_url)
-//       .then((res) => res.json())
-//       .then((data) => {
-//          generateAll(data.data);
-//       })
-//       .catch(() => alert("Ma'lumot kelishda xatolik yuz berdi!"));
-// }
-// dataApi()
+let k = 1
+function data() {
+   fetch(api_url)
+      .then((res) => res.json())
+      .then((data) => {
+         generate(data.data);
+      })
+   // .catch(() => alert("Ma'lumot kelishda xatolik yuz berdi!"));
+}
+data()
 
 
 // apidan kelgan malumotlarni htmlga generatsiya qiladi
-// function generateAlll(res) {
-//    tbody.innerHTML = ""
+function generate(res) {
+   tbody2.innerHTML = ""
 
-//    res.map((item) => {
-//       const tableBody = document.createElement('tr')
+   res.map((item) => {
+      const tableBody = document.createElement('tr')
 
 
-//       tableBody.innerHTML = `
-//       <td class="border-2 border-x-0 border-black">
-//          <div class="flex items-center justify-center">
-//             ${n++}
-//          </div>
-//       </td>
-//       <td class="border-2 border-x-0 border-black px-8 py-1 md:py-3">
-//          <div class="flex items-center gap-5">
-//             <div
-//                class="flex min-w-[70px] md:min-w-[123px] min-h-[60px] md:min-h-[102px] justify-center items-center bg-white border-solid border-2 border-gray-200 rounded-lg">
-//                <img src="${item.img}"
-//                   class="w-[50px] md:w-[80px]" alt="">
-//             </div>
-//             <p class="md:w-56">${item.name}</p>
-//          </div>
-//       </td>
+      tableBody.innerHTML = `
+      <td class="border-2 border-x-0">
+         <div class="flex items-center justify-center">
+            ${k++}
+         </div>
+      </td>
+      <td class="border-2 border-x-0 px-8 py-1 md:py-3">
+         <div class="flex items-center gap-5">
+            <div
+               class="flex min-w-[70px] md:min-w-[123px] min-h-[60px] md:min-h-[102px] justify-center items-center bg-white border-solid border-2 border-gray-200 rounded-lg">
+               <img src="${item.img}"
+                  class="w-[50px] md:w-[80px]" alt="">
+            </div>
+            <p class="md:w-56">${item.name}</p>
+         </div>
+      </td>
       
-//       <td class="border-2 border-x-0  border-black">
-//          <div class="flex justify-center">
-//             <p
-//                class="ball w-[51px] h-[28px] bg-gray-100 flex justify-center items-center rounded-lg font-medium">
-//                ${item.ball}
-//             </p>
-//          </div>
-//       </td>
-//       <td class="border-2 border-s-0 border-black">
-//       <div class="w-full h-full flex justify-center items-center px-3">
-//          <button
-//             class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
-//       </div>
-//       </td>
-//       `
-//       tbody.appendChild(tableBody);
-//    })
-// }
+      <td class="border-2 border-x-0 ">
+         <div class="flex justify-center">
+            <p
+               class="ball w-[51px] h-[28px] bg-gray-100 flex justify-center items-center rounded-lg font-medium">
+               ${item.ball}
+            </p>
+         </div>
+      </td>
+      <td class="border-2 border-s-0">
+      <div class="w-full h-full flex justify-center items-center px-3">
+         <button
+            class="uppercase py-2 px-6 rounded-lg font-medium text-blue-500 border-2 hover:bg-[#2861F5] hover:text-white border-blue-500">batafsil</button>
+      </div>
+      </td>
+      `
+      tbody2.appendChild(tableBody);
+   })
+}
 // ----------------------- PARTICIPANTS RATING END -------------------------------
+
+
 
 
 // ----------------------- LEGAL DOCUMENTS -------------------------------
 
-const share = document.querySelector('.share')
-const closeBtn = document.querySelector('.closeBtn')
 const modal_window = document.querySelector('.modal_window')
 
-share.addEventListener('click', () => {
+document.querySelector('.share').onclick = function () {
    modal_window.classList.remove('hidden')
    body.classList.add('overflow-hidden')
-})
+}
 
-closeBtn.addEventListener('click', () => {
+document.querySelector('.closeBtn').onclick = function () {
    modal_window.classList.add('hidden')
    body.classList.remove('overflow-hidden')
-})
+}
+
 
 // ----------------------- LEGAL DOCUMENTS END --------------------------
+
