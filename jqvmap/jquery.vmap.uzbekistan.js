@@ -1,25 +1,25 @@
 const regionsElem = document.querySelector(".activeRegion");
 
 const renderR2 = () => {
-  
-  function data() {
-    fetch("../data.json")
-      .then((res) => res.json())
-      .then((data) => {
-        render(data.data);
-      })
-    // .catch(() => alert("Ma'lumot kelishda xatolik yuz berdi!"));
-  }
-  data()
+
+  // function data() {
+  fetch('../data.json')
+    .then((res) => res.json())
+    .then((data) => {
+      render(data.data);
+    })
+  // .catch(() => alert("Ma'lumot kelishda xatolik yuz berdi!"));
+  // }
+  // data()
 
   const render = (res) => {
     console.log(res);
-
+    regionsElem.innerHTML = ""
 
 
     res.map((item) => {
-      regionsElem.innerHTML = `
-    <div class="">
+      const div = document.createElement("div")
+      div.innerHTML = `
     <details class="bg-blue-50 open:shadow-lg  p-4 rounded-lg ">
       <summary class="text-sm  text-slate-900 font-semibold select-none  flex items-center gap-3 relative">
          <div class="p-1 rounded-lg bg-white">
@@ -30,21 +30,21 @@ const renderR2 = () => {
       </summary>
       <div class="mt-3 text-sm flex flex-col gap-2">
        <div class="flex gap-5">
-          <img src="./assets/icons/participantsRating/location.svg" alt="">
+          <img src="./assets/icons/participants/location.svg" alt="">
           <p>${item.hudud}</p>
        </div>
        <div class="flex gap-5">
-          <img src="./assets/icons/participantsRating/call.svg" alt="">
+          <img src="./assets/icons/participants/call.svg" alt="">
           <p>+998 97 628 28 82</p>
        </div>
        <div class="flex gap-5">
-          <img src="./assets/icons/participantsRating/mail.svg" alt="">
+          <img src="./assets/icons/participants/fax-solid.svg" alt="" class = "w-5">
           <p>Faksa.the@gmail.com</p>
        </div>
       </div>
     </details>
-  </div>
-    `;
+    `
+      regionsElem.appendChild(div)
     })
 
   }
