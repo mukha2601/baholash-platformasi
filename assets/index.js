@@ -6,6 +6,30 @@ document.querySelector('.btnBurger').onclick = function () {
    document.querySelector('body').classList.toggle('max-md:overflow-hidden')
 }
 
+const prev1 = document.querySelector('.prev1')
+if (prev1 !== null) {
+   document.querySelector('.prev1').onclick = function () {
+      document.querySelector('.wrapper1').scrollLeft -= 200
+   }
+   document.querySelector('.next1').onclick = function () {
+      document.querySelector('.wrapper1').scrollLeft += 200
+   }
+   document.querySelector('.prev2').onclick = function () {
+      document.querySelector('.wrapper2').scrollLeft -= 200
+   }
+   document.querySelector('.next2').onclick = function () {
+      document.querySelector('.wrapper2').scrollLeft += 200
+   }
+   document.querySelector('.prev3').onclick = function () {
+      document.querySelector('.wrapper3').scrollLeft -= 200
+   }
+   document.querySelector('.next3').onclick = function () {
+      document.querySelector('.wrapper3').scrollLeft += 200
+   }
+}
+
+
+
 
 // ----------------------- MAIN PARTICIPANTS -------------------------------
 const sliderBox1 = document.querySelector('.sliderBox1')
@@ -29,35 +53,6 @@ if (sliderBox1 !== null) {
    })
 }
 // ----------------------- MAIN PARTICIPANTS END ---------------------------
-
-const glide = document.querySelector('.glide')
-if (glide !== null) {
-   const config = {
-      type: 'carousel',
-      startAt: 0,
-      breakpoints: {
-         400: {
-            perView: 1.5
-         },
-         500: {
-            perView: 2
-         },
-         // 640: {
-         //    perView: 2.5
-         // },
-         768: {
-            perView: 2.5
-         },
-         900: {
-            perView: 3
-         },
-         1536: {
-            perView: 3.5
-         }
-      }
-   }
-   new Glide('.glide', config).mount()
-}
 
 
 
