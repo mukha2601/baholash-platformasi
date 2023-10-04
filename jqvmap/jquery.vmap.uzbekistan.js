@@ -1,6 +1,68 @@
 import { data } from "../assets/data.js"
 const regionsElem = document.querySelector(".activeRegion");
 
+
+const mText = document.querySelector('.map-text')
+
+function mapText() {
+  mText.innerHTML = `
+  <div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Andijon viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">17</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Farg'ona viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">15</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Qoraqalpogʻiston Respublikasi</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">21</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Buxoro viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">13</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Jizzax viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">21</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Xorazm viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">18</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Qashqadaryo viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">14</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Navoiy viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">13</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Namangan viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">17</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Samarqand viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">18</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Sirdaryo viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">22</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Surxondaryo viloyati</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">18</span> ta</p>
+</div>
+<div class="grd gap-2 border-2 rounded-lg p-2">
+  <h1 class="font-bold text-gray-600">Toshkent</h1>
+  <p class="text-gray-500">OTM lar soni: <span class="font-bold">8</span> ta</p>
+</div>
+  `
+}
+mapText()
+
+
 const renderR2 = () => {
   regionsElem.innerHTML = ""
 
@@ -93,7 +155,6 @@ const regionsCode = [{
   code: "r14",
   renderFn: renderR2
 },
-
 ]
 
 
@@ -108,37 +169,41 @@ const handleRegion = (regionId) => {
   }
 };
 
-jQuery(document).ready(function () {
+if (document.addEventListener('click', (e) => e.srcElement.currentFillColor == "#337CCF")) {
+  mapText()
+}
+else {
 
-  jQuery('#vmap').vectorMap({
-    map: 'uzbekistan_uz',
-    backgroundColor: '#fff',
-    borderColor: '#fff',
-    borderOpacity: 1,
-    borderWidth: 2,
-    color: '#337CCF',
-    enableZoom: true,
-    hoverColor: '#A8DF8E',
-    hoverOpacity: null,
-    normalizeFunction: 'linear',
-    scaleColors: ['#b6d6ff', '#005ace'],
-    selectedColor: '#A8DF8E',
-    selectedRegions: null,
-    showTooltip: true,
-    onRegionClick: function (element, code, region) {
-      var message = 'You clicked "' +
-        region +
-        '" which has the code: ' +
-        code.toUpperCase();
-
-      handleRegion(code)
-
-
-
-      // alert(message);
-    }
+  jQuery(document).ready(function () {
+    jQuery('#vmap').vectorMap({
+      map: 'uzbekistan_uz',
+      backgroundColor: '#fff',
+      borderColor: '#fff',
+      borderOpacity: 1,
+      borderWidth: 2,
+      color: '#337CCF',
+      enableZoom: true,
+      hoverColor: '#A8DF8E',
+      hoverOpacity: null,
+      normalizeFunction: 'linear',
+      scaleColors: ['#b6d6ff', '#005ace'],
+      selectedColor: '#A8DF8E',
+      selectedRegions: null,
+      showTooltip: true,
+      onRegionClick: function (element, code, region) {
+        var message = 'You clicked "' +
+          region +
+          '" which has the code: ' +
+          code.toUpperCase();
+       
+        handleRegion(code)
+        // alert(message);
+      }
+    });
   });
-});;
+}
+
+
 
 jQuery.fn.vectorMap('addMap', 'uzbekistan_uz', {
   "height": 390,

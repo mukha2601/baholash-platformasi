@@ -1,10 +1,14 @@
 import { data, obj1, obj2, obj3 } from './data.js'
 
+
+
 document.querySelector('.btnBurger').onclick = function () {
    document.querySelector('.hiddenNav').classList.toggle('hidden')
    document.querySelector('.hiddenNav').classList.toggle('flex')
    document.querySelector('body').classList.toggle('max-md:overflow-hidden')
 }
+
+
 
 const prev1 = document.querySelector('.prev1')
 if (prev1 !== null) {
