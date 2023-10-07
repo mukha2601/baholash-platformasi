@@ -3,65 +3,65 @@ const data = [{
    name: "Akfa universiteti",
    hudud: "Toshkent shahri",
    ball: "6300",
-   img: "./assets/icons/participantsRating/Akfa universiteti.svg"
+   img: "./assets/icons/participantsRating/global logo.svg"
 },
 {
    name: "Farg’ona davlat universiteti",
    hudud: "Farg’ona shahri",
    ball: "6423",
-   img: "./assets/icons/participantsRating/Farg’ona davlat universiteti.svg"
+   img: "./assets/icons/participantsRating/global logo.svg"
 },
 {
    name: "Andijon davlat universiteti",
    hudud: "Andijon shahri",
    ball: "4587",
-   img: "./assets/icons/participantsRating/Andijon davlat universiteti.svg"
+   img: "./assets/icons/participantsRating/global logo.svg"
 },
 {
    name: "Namangan davlat universiteti",
    hudud: "Namangan shahri",
    ball: "5406",
-   img: "./assets/icons/participantsRating/Namangan davlat universiteti.svg"
+   img: "./assets/icons/participantsRating/global logo.svg"
 },
 {
    name: "Islom karimov nomidagi Toshkent davlat texnika universiteti",
    hudud: "Toshkent shahri",
    ball: "2155",
-   img: "./assets/icons/participantsRating/Islom karimov nomidagi universiteti.svg"
+   img: "./assets/icons/participantsRating/global logo.svg"
 },
 {
    name: "Toshkent tibbiyot universiteti Urganch filiali",
    hudud: "Urganch shahri",
    ball: "4509",
-   img: "./assets/icons/participantsRating/Toshkent tibbiyot universiteti Urganch filiali.svg"
+   img: "./assets/icons/participantsRating/global logo.svg"
 },
 {
    name: "Muhammad Al Xorazmiy nomidagi Toshkent axborot texnogoliyalari Universiteti",
    hudud: "Toshkent shahri",
    ball: "1200",
-   img: "./assets/icons/participantsRating/Toshkent axborot texnogoliyalari Universiteti.svg"
+   img: "./assets/icons/participantsRating/global logo.svg"
 },
 {
    name: "Qo'qon davlat pedagogika instituti",
    hudud: "Qo’qon shahri",
    ball: "3251",
-   img: "./assets/icons/participantsRating/Qo'qon davlat pedagogika instituti.svg"
+   img: "./assets/icons/participantsRating/global logo.svg"
 },
 {
    name: "Farg'ona politexnika instituti",
    hudud: "Farg’ona shahri",
    ball: "2592",
-   img: "./assets/icons/participantsRating/Farg'ona politexnika instituti.svg"
+   img: "./assets/icons/participantsRating/global logo.svg"
 }
 ]
 
 const obj1 = [
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
-   { name: "Farg’ona davlat universiteti", src: "./assets/icons/participants/akfa logo.svg", location: "O'zbekiston , Fargona", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Global Education", src: "./assets/icons/participants/global logo.svg", location: "O'zbekiston", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Global Education", src: "./assets/icons/participants/global logo.svg", location: "O'zbekiston", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Global Education", src: "./assets/icons/participants/global logo.svg", location: "O'zbekiston", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Global Education", src: "./assets/icons/participants/global logo.svg", location: "O'zbekiston", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Global Education", src: "./assets/icons/participants/global logo.svg", location: "O'zbekiston", icon: "./assets/icons/participantsRating/location.svg" },
+   { name: "Global Education", src: "./assets/icons/participants/global logo.svg", location: "O'zbekiston", icon: "./assets/icons/participantsRating/location.svg" },
 ]
 
 const obj2 = [
@@ -74,11 +74,11 @@ const obj2 = [
 ]
 
 const obj3 = [
-   { img: "./assets/icons/usefulLinks/lex.svg", text: "O’zbekiston respublikasi, milliy hujjatlar bazasi" },
-   { img: "./assets/icons/usefulLinks/gerb.svg", text: "O’zbekiston respublikasi, prezidenti virtual qabulxonasi" },
-   { img: "./assets/icons/usefulLinks/gerb.svg", text: "O’zbekiston respublikasi, prezidenti virtual qabulxonasi" },
-   { img: "./assets/icons/usefulLinks/gerb.svg", text: "O’zbekiston respublikasi, prezidenti virtual qabulxonasi" },
-   { img: "./assets/icons/usefulLinks/gerb.svg", text: "O’zbekiston respublikasi, prezidenti virtual qabulxonasi" },
-   { img: "./assets/icons/usefulLinks/gerb.svg", text: "O’zbekiston respublikasi, prezidenti virtual qabulxonasi" }
+   { img: "./assets/icons/usefulLinks/mini univer logo.svg", text: "Lorem Ipsum is simply dummy text of the printing" },
+   { img: "./assets/icons/usefulLinks/mini univer logo.svg", text: "Lorem Ipsum is simply dummy text of the printing" },
+   { img: "./assets/icons/usefulLinks/mini univer logo.svg", text: "Lorem Ipsum is simply dummy text of the printing" },
+   { img: "./assets/icons/usefulLinks/mini univer logo.svg", text: "Lorem Ipsum is simply dummy text of the printing" },
+   { img: "./assets/icons/usefulLinks/mini univer logo.svg", text: "Lorem Ipsum is simply dummy text of the printing" },
+   { img: "./assets/icons/usefulLinks/mini univer logo.svg", text: "Lorem Ipsum is simply dummy text of the printing" }
 ]
 export { data, obj1, obj2, obj3 };
